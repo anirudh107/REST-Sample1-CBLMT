@@ -1,0 +1,48 @@
+Mar 05, 2014 7:04:19 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Mar 05, 2014 7:04:20 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 05, 2014 7:04:22 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/messageprocessor] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Mar 05, 2014 7:04:22 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@10a98f4]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@bfe6ca]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 05, 2014 7:04:22 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@c8edb3]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@16d9188]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 05, 2014 7:04:25 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Mar 05, 2014 7:07:02 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Sybase\ASE-15_0\jobscheduler\bin;D:\Sybase\ASE-15_0\dll;D:\Sybase\ASE-15_0\bin;D:\Sybase\SCC-3_2\bin;D:\Sybase\DBISQL\bin;D:\Sybase\DataAccess64\ADONET\dll;D:\Sybase\DataAccess\ADONET\dll;D:\Sybase\DataAccess64\ODBC\dll;D:\Sybase\DataAccess\ODBC\dll;D:\Sybase\OCS-15_0\lib3p64;D:\Sybase\OCS-15_0\lib3p;D:\Sybase\OCS-15_0\dll;D:\Sybase\OCS-15_0\bin;D:\Sybase\DataAccess64\OLEDB\dll;D:\Sybase\DataAccess\OLEDB\dll;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;D:\Program Files (x86)\jZip;C:\Program Files (x86)\Java\jre7\bin;D:\Program Files (x86)\apache-ant-1.8.4\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Volante_Installs\utils\apache-maven-3.0.4\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files (x86)\UltraEdit-32;.;;.
+Mar 05, 2014 7:07:02 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 05, 2014 7:07:02 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 05, 2014 7:07:03 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Mar 05, 2014 7:07:03 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1264 ms
+Mar 05, 2014 7:07:03 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 05, 2014 7:07:03 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Mar 05, 2014 7:07:04 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Mar 05, 2014 7:07:04 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Mar 05, 2014 7:07:04 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive messageprocessor.war
+Mar 05, 2014 7:07:04 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive vte.war
+Mar 05, 2014 7:07:04 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Mar 05, 2014 7:07:04 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Mar 05, 2014 7:07:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Mar 05, 2014 7:07:05 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Mar 05, 2014 7:07:05 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 05, 2014 7:07:05 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/22  config=null
+Mar 05, 2014 7:07:05 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1785 ms

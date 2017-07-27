@@ -1,0 +1,77 @@
+<?xml version="1.0" standalone="yes"?>
+
+<!-- Copyright 2005 Volante technologies, Inc. All rights reserved. -->
+<project basedir="." default="build">
+
+	<property name="designer.home" value="D:\Volante_Installs\Volante_R521" />
+	<property name="designer.runtime.lib" value="${designer.home}/lib/runtime" />
+	<property name="warname" value="CBLMT_REST" />
+	<property name="build.dir" value="${basedir}" />	
+
+	<path id="classpath">
+		<fileset dir="${designer.home}" includes="lib/*.jar" />
+	</path>
+	<taskdef name="volantecg" classname="com.volante.util.tasks.ant.CGTask">
+		<classpath refid="classpath"/>
+	</taskdef>
+
+	<target name="compile" description="Compile cartridge">
+		<echo message="Building the cartridge..." />    
+
+		<volantecg platform="java" nodebug="true" depend="true" home="${designer.home}" project="${build.dir}/CBLMT_REST.vpj" targetDir="${build.dir}/src/WEB-INF/lib"/>
+	</target>
+
+	<!-- =================================================================== -->
+	<target name="copyappjars">
+		<copy todir="${build.dir}/src/WEB-INF/lib" >
+
+			<fileset dir="${designer.runtime.lib}">
+				<include name="jta.jar" />
+				<include name="transformrt.jar" />
+				<include name="generalutils.jar" />
+				<include name="resourcemanager.jar"/> 
+				<include name="volante-restrt.jar"/>
+				<include name="volante-osgirt.jar"/>
+				<include name="volante-client.jar"/>
+				<include name="swiftresources.jar"/>
+				<include name="simplert.jar"/>
+				<include name="swiftrt.jar"/>
+				<include name="xmlrt.jar"/>
+				<include name="universalrt.jar"/>
+				<include name="asciirt.jar"/>
+			</fileset> 
+
+			<fileset dir="${designer.runtime.lib}/jetty">
+				<include name="jetty.jar"/>
+			</fileset>
+
+		</copy>
+	</target>
+
+
+	<target name="buildwar" depends="compile,copyappjars">
+		<war warfile="${build.dir}/${warname}.war" webxml="${build.dir}/src/WEB-INF/web.xml">
+			<fileset dir="${build.dir}/src">
+				<exclude name="WEB-INF/web.xml"/>
+			</fileset>
+		</war>
+	</target> 
+
+	<target name="build" depends="buildwar"> 
+
+	</target> 
+
+	<target name="clean" description="Deletes all the generated artifacts.">
+		<delete includeemptydirs="true">
+			<fileset dir="${build.dir}" includes="**/java/"/>
+			<fileset dir="${build.dir}/src/WEB-INF/lib" includes = "*.jar"/>
+			<fileset dir="${build.dir}" includes="*.war" />
+		</delete>
+
+
+	</target>
+
+
+
+</project>
+

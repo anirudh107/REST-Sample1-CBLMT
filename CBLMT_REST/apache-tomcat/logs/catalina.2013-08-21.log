@@ -1,0 +1,6 @@
+Aug 21, 2013 7:25:44 AM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Aug 21, 2013 7:25:45 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 21, 2013 7:25:46 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/repository] registered the JDBC driver [org.hsqldb.jdbcDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.

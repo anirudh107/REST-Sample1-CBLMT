@@ -1,0 +1,10 @@
+Jun 09, 2015 12:19:57 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/messageprocessor]
+Jun 09, 2015 12:19:58 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/messageprocessor] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Jun 09, 2015 12:19:58 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@1dffeb0]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@ca1666]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Jun 09, 2015 12:19:58 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.lang.FloatingDecimal$1] (value [com.tplus.transform.lang.FloatingDecimal$1@184a8e6]) and a value of type [char[]] (value [[C@6ca120]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Jun 09, 2015 12:19:58 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@1c6672d]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@9fcfc1]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.

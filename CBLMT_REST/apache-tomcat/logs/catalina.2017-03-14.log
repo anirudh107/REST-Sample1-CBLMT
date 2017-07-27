@@ -1,0 +1,728 @@
+Mar 14, 2017 3:03:58 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.8.0_102\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.3.3\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;.
+Mar 14, 2017 3:03:59 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 3:03:59 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 3:04:00 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 3:04:00 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2336 ms
+Mar 14, 2017 3:04:00 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 14, 2017 3:04:00 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Mar 14, 2017 3:04:02 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Mar 14, 2017 3:04:02 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Mar 14, 2017 3:04:02 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Mar 14, 2017 3:04:02 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Mar 14, 2017 3:04:03 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Mar 14, 2017 3:04:03 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 3:04:03 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 14, 2017 3:04:03 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/41  config=null
+Mar 14, 2017 3:04:03 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 3063 ms
+Mar 14, 2017 3:07:31 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 3:07:32 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 14, 2017 3:07:32 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 3:08:12 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.8.0_102\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.3.3\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;.
+Mar 14, 2017 3:08:12 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 3:08:12 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 3:08:12 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 3:08:12 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 747 ms
+Mar 14, 2017 3:08:12 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 14, 2017 3:08:12 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Mar 14, 2017 3:08:13 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Mar 14, 2017 3:08:13 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Mar 14, 2017 3:08:13 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive RestTest.war
+Mar 14, 2017 3:08:13 PM com.tplus.transform.runtime.rest.server.VolanteRestServlet init
+INFO: Initializing REST Servlet at - /RestTest
+Mar 14, 2017 3:08:14 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Mar 14, 2017 3:08:14 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Mar 14, 2017 3:08:14 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Mar 14, 2017 3:08:14 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 3:08:14 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 14, 2017 3:08:14 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/31  config=null
+Mar 14, 2017 3:08:14 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1785 ms
+Mar 14, 2017 3:08:21 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/RestTest/rest/stox
+Mar 14, 2017 3:08:21 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation SWIFTToXML
+Mar 14, 2017 3:08:21 PM com.tplus.transform.runtime.simple.SimpleServer getInstance
+INFO: Starting Simple runtime ...
+Mar 14, 2017 3:08:21 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>{1:F01IRVTUS33XXXX0230023948}{2:O1030905041029TESTCNVTXXXX00004554540410291005N}{4:_:20:00074_:23B:CRTS_:32A:161118USD3,34_:50A:/12345_IRVTUS33_:52D:/D/34x_4X35x_:59A:/78922_TESTGB55XXX_:71A:SHA_:72:/REJT/12A/A2_/AC01/_/MREF/16x_/TREF/16x_/CHGS/USD1,34_/TEXT/29x_-}{5:{CHK:0664BF97687E}{TNG:}}</Payload>__</Input>__
+Mar 14, 2017 4:32:49 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 4:32:50 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 14, 2017 4:32:50 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/RestTest] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@2d6398]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@1e59e9b]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 4:32:50 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/RestTest] created a ThreadLocal with key of type [com.tplus.transform.lang.FloatingDecimal$1] (value [com.tplus.transform.lang.FloatingDecimal$1@100767]) and a value of type [char[]] (value [[C@56057b]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 4:32:50 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/RestTest] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@181e2ed]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@5949de]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 4:32:50 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 4:35:29 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.8.0_102\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.3.3\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;.
+Mar 14, 2017 4:35:29 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 4:35:29 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 4:35:30 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 4:35:30 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 871 ms
+Mar 14, 2017 4:35:30 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 14, 2017 4:35:30 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Mar 14, 2017 4:35:31 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Mar 14, 2017 4:35:31 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Mar 14, 2017 4:35:31 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive CBLMT_REST.war
+Mar 14, 2017 4:35:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Mar 14, 2017 4:35:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Mar 14, 2017 4:35:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Mar 14, 2017 4:35:31 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 4:35:31 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 14, 2017 4:35:31 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/35  config=null
+Mar 14, 2017 4:35:31 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1741 ms
+Mar 14, 2017 4:52:57 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 4:52:58 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 14, 2017 4:52:58 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 8:59:16 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.8.0_102\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.3.3\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;.
+Mar 14, 2017 8:59:16 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 8:59:16 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 8:59:16 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 8:59:16 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 418 ms
+Mar 14, 2017 8:59:16 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 14, 2017 8:59:16 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Mar 14, 2017 8:59:17 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Mar 14, 2017 8:59:17 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Mar 14, 2017 8:59:17 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive CBLMT_REST.war
+Mar 14, 2017 8:59:17 PM com.tplus.transform.runtime.rest.server.VolanteRestServlet init
+INFO: Initializing REST Servlet at - /CBLMT_REST
+Mar 14, 2017 8:59:17 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Mar 14, 2017 8:59:17 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Mar 14, 2017 8:59:17 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Mar 14, 2017 8:59:17 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 8:59:17 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 14, 2017 8:59:17 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/59  config=null
+Mar 14, 2017 8:59:17 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1088 ms
+Mar 14, 2017 9:00:21 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 9:00:22 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 14, 2017 9:00:23 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 9:01:31 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.8.0_102\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.3.3\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;.
+Mar 14, 2017 9:01:31 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 9:01:31 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 9:01:31 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 9:01:31 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 301 ms
+Mar 14, 2017 9:01:31 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 14, 2017 9:01:31 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Mar 14, 2017 9:01:31 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Mar 14, 2017 9:01:31 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Mar 14, 2017 9:01:31 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive CBLMT_REST.war
+Mar 14, 2017 9:01:31 PM com.tplus.transform.runtime.rest.server.VolanteRestServlet init
+INFO: Initializing REST Servlet at - /CBLMT_REST
+Mar 14, 2017 9:01:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Mar 14, 2017 9:01:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Mar 14, 2017 9:01:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Mar 14, 2017 9:01:32 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 9:01:32 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 14, 2017 9:01:32 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/12  config=null
+Mar 14, 2017 9:01:32 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 679 ms
+Mar 14, 2017 9:31:17 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 9:31:18 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 14, 2017 9:31:18 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 9:32:57 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.8.0_102\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.3.3\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;.
+Mar 14, 2017 9:32:57 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 9:32:57 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 9:32:57 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 9:32:57 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 299 ms
+Mar 14, 2017 9:32:57 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 14, 2017 9:32:57 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Mar 14, 2017 9:32:58 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Mar 14, 2017 9:32:58 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Mar 14, 2017 9:32:58 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive CBLMT_REST.war
+Mar 14, 2017 9:32:58 PM com.tplus.transform.runtime.rest.server.VolanteRestServlet init
+INFO: Initializing REST Servlet at - /CBLMT_REST
+Mar 14, 2017 9:32:58 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Mar 14, 2017 9:32:58 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Mar 14, 2017 9:32:58 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Mar 14, 2017 9:32:58 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 9:32:58 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 14, 2017 9:32:58 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/12  config=null
+Mar 14, 2017 9:32:58 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 640 ms
+Mar 14, 2017 9:33:41 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 9:33:42 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 14, 2017 9:33:42 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 9:35:51 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.8.0_102\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.3.3\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;.
+Mar 14, 2017 9:35:51 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 9:35:51 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 9:35:51 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 9:35:51 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 294 ms
+Mar 14, 2017 9:35:51 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 14, 2017 9:35:51 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Mar 14, 2017 9:35:51 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Mar 14, 2017 9:35:51 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Mar 14, 2017 9:35:51 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive CBLMT_REST.war
+Mar 14, 2017 9:35:51 PM com.tplus.transform.runtime.rest.server.VolanteRestServlet init
+INFO: Initializing REST Servlet at - /CBLMT_REST
+Mar 14, 2017 9:35:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Mar 14, 2017 9:35:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Mar 14, 2017 9:35:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Mar 14, 2017 9:35:51 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 9:35:51 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 14, 2017 9:35:51 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/12  config=null
+Mar 14, 2017 9:35:51 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 572 ms
+Mar 14, 2017 9:36:06 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertcbtomt
+Mar 14, 2017 9:36:06 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation CobCbToMTFlow
+Mar 14, 2017 9:36:06 PM com.tplus.transform.runtime.simple.SimpleServer getInstance
+INFO: Starting Simple runtime ...
+Mar 14, 2017 9:36:07 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>PTSAIN10-103-NVR-0006 0000            000000USD091120  000000000015000SPXAIN N                                                                      RECEIVERS CORRESPONDENT           NEW YORK BRANCH                                                                                                                                                                      RECEIVERS CORRESPONDENTNEW YORK BRA                                                                                                                                                                                                                                                              BENEFICIARY CUSTOMER NAME                                                                                                               BENEFICIARY CUSTOMER NAME                                                                                                                          /REC/INSTRUCTION FOR RECEIVER                                                                                                                                           00015000USD    SHAUSD</Payload>__</Input>__
+Mar 14, 2017 9:39:01 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertcbtomt
+Mar 14, 2017 9:39:01 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation CobCbToMTFlow
+Mar 14, 2017 9:39:01 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>PTSAIN10-103-NVR-0006 0000            000000USD091120  000000000015000SPXAIN N                                                                      RECEIVERS CORRESPONDENT           NEW YORK BRANCH                                                                                                                                                                      RECEIVERS CORRESPONDENTNEW YORK BRA                                                                                                                                                                                                                                                              BENEFICIARY CUSTOMER NAME                                                                                                               BENEFICIARY CUSTOMER NAME                                                                                                                          /REC/INSTRUCTION FOR RECEIVER                                                                                                                                           00015000USD    SHAUSD</Payload>__</Input>__
+Mar 14, 2017 10:15:24 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 10:15:25 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 14, 2017 10:15:25 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@a5bbf5]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@d6d956]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:15:25 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [com.tplus.transform.runtime.formula.DateFunctions$1] (value [com.tplus.transform.runtime.formula.DateFunctions$1@1f9405f]) and a value of type [java.util.GregorianCalendar] (value [java.util.GregorianCalendar[time=1489449600000,areFieldsSet=true,areAllFieldsSet=false,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Europe/London",offset=0,dstSavings=3600000,useDaylight=true,transitions=242,lastRule=java.util.SimpleTimeZone[id=Europe/London,offset=0,dstSavings=3600000,useDaylight=true,startYear=0,startMode=2,startMonth=2,startDay=-1,startDayOfWeek=1,startTime=3600000,startTimeMode=2,endMode=2,endMonth=9,endDay=-1,endDayOfWeek=1,endTime=3600000,endTimeMode=2]],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=?,YEAR=2017,MONTH=2,WEEK_OF_YEAR=?,WEEK_OF_MONTH=?,DAY_OF_MONTH=14,DAY_OF_YEAR=?,DAY_OF_WEEK=?,DAY_OF_WEEK_IN_MONTH=?,AM_PM=?,HOUR=?,HOUR_OF_DAY=?,MINUTE=?,SECOND=?,MILLISECOND=?,ZONE_OFFSET=?,DST_OFFSET=?]]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:15:25 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@f1231d]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@13851b5]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:15:25 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [com.tplus.transform.lang.FloatingDecimal$1] (value [com.tplus.transform.lang.FloatingDecimal$1@91e459]) and a value of type [char[]] (value [[C@26aa05]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:15:25 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 10:16:09 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.8.0_102\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.3.3\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;.
+Mar 14, 2017 10:16:09 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 10:16:09 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 10:16:09 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 10:16:09 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 299 ms
+Mar 14, 2017 10:16:09 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 14, 2017 10:16:09 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Mar 14, 2017 10:16:09 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Mar 14, 2017 10:16:09 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Mar 14, 2017 10:16:09 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive CBLMT_REST.war
+Mar 14, 2017 10:16:09 PM com.tplus.transform.runtime.rest.server.VolanteRestServlet init
+INFO: Initializing REST Servlet at - /CBLMT_REST
+Mar 14, 2017 10:16:09 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Mar 14, 2017 10:16:09 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Mar 14, 2017 10:16:09 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Mar 14, 2017 10:16:09 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 10:16:09 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 14, 2017 10:16:09 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/11  config=null
+Mar 14, 2017 10:16:09 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 642 ms
+Mar 14, 2017 10:19:28 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertmttocb
+Mar 14, 2017 10:19:28 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation MTToCobCbFlow
+Mar 14, 2017 10:19:28 PM com.tplus.transform.runtime.simple.SimpleServer getInstance
+INFO: Starting Simple runtime ...
+Mar 14, 2017 10:19:28 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>PTSAIN10-103-NVR-0006 0000            000000USD091120  000000000015000SPXAIN N                                                                      RECEIVERS CORRESPONDENT           NEW YORK BRANCH                                                                                                                                                                      RECEIVERS CORRESPONDENTNEW YORK BRA                                                                                                                                                                                                                                                              BENEFICIARY CUSTOMER NAME                                                                                                               BENEFICIARY CUSTOMER NAME                                                                                                                          /REC/INSTRUCTION FOR RECEIVER                                                                                                                                           00015000USD    SHAUSD</Payload>__</Input>__
+Mar 14, 2017 10:19:28 PM com.tplus.transform.runtime.rest.server.RestServer handle
+SEVERE: com.tplus.transform.runtime.TransformNullValueException: Attempt to access field 'rawMT' with null value
+Mar 14, 2017 10:19:53 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertmttocb
+Mar 14, 2017 10:19:53 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation MTToCobCbFlow
+Mar 14, 2017 10:19:53 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>{1:F01IRVTUS33XXXX0230023948}{2:O1030905041029TESTCNVTXXXX00004554540410291005N}{4:_:20:00074_:23B:CRTS_:32A:161118USD3,34_:50A:/12345_IRVTUS33_:52D:/D/34x_4X35x_:59A:/78922_TESTGB55XXX_:71A:SHA_:72:/REJT/12A/A2_/AC01/_/MREF/16x_/TREF/16x_/CHGS/USD1,34_/TEXT/29x_-}{5:{CHK:0664BF97687E}{TNG:}}</Payload>__</Input>__
+Mar 14, 2017 10:19:53 PM com.tplus.transform.runtime.rest.server.RestServer handle
+SEVERE: com.tplus.transform.runtime.TransformNullValueException: Attempt to access field 'rawMT' with null value
+Mar 14, 2017 10:19:58 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertmttocb
+Mar 14, 2017 10:19:58 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation MTToCobCbFlow
+Mar 14, 2017 10:19:58 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>{1:F01IRVTUS33XXXX0230023948}{2:O1030905041029TESTCNVTXXXX00004554540410291005N}{4:_:20:00074_:23B:CRTS_:32A:161118USD3,34_:50A:/12345_IRVTUS33_:52D:/D/34x_4X35x_:59A:/78922_TESTGB55XXX_:71A:SHA_:72:/REJT/12A/A2_/AC01/_/MREF/16x_/TREF/16x_/CHGS/USD1,34_/TEXT/29x_-}{5:{CHK:0664BF97687E}{TNG:}}</Payload>__</Input>__
+Mar 14, 2017 10:19:58 PM com.tplus.transform.runtime.rest.server.RestServer handle
+SEVERE: com.tplus.transform.runtime.TransformNullValueException: Attempt to access field 'rawMT' with null value
+Mar 14, 2017 10:20:43 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertcbtomt
+Mar 14, 2017 10:20:43 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation CobCbToMTFlow
+Mar 14, 2017 10:20:43 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>PTSAIN10-103-NVR-0006 0000            000000USD091120  000000000015000SPXAIN N                                                                      RECEIVERS CORRESPONDENT           NEW YORK BRANCH                                                                                                                                                                      RECEIVERS CORRESPONDENTNEW YORK BRA                                                                                                                                                                                                                                                              BENEFICIARY CUSTOMER NAME                                                                                                               BENEFICIARY CUSTOMER NAME                                                                                                                          /REC/INSTRUCTION FOR RECEIVER                                                                                                                                           00015000USD    SHAUSD</Payload>__</Input>__
+Mar 14, 2017 10:22:11 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertcbtomt
+Mar 14, 2017 10:22:11 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation CobCbToMTFlow
+Mar 14, 2017 10:22:11 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>PTSAIN10-103-NVR-0006 0000            000000USD091120  000000000015000SPXAIN N                                                                      RECEIVERS CORRESPONDENT           NEW YORK BRANCH                                                                                                                                                                      RECEIVERS CORRESPONDENTNEW YORK BRA                                                                                                                                                                                                                                                              BENEFICIARY CUSTOMER NAME                                                                                                               BENEFICIARY CUSTOMER NAME                                                                                                                          /REC/INSTRUCTION FOR RECEIVER                                                                                                                                           00015000USD    SHAUSD</Payload>__</Input>__
+Mar 14, 2017 10:33:02 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertcbtomt
+Mar 14, 2017 10:33:02 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation CobCbToMTFlow
+Mar 14, 2017 10:33:02 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>PTSAIN10-103-NVR-0006 0000            000000USD091120  000000000015000SPXAIN N                                                                      RECEIVERS CORRESPONDENT           NEW YORK BRANCH                                                                                                                                                                      RECEIVERS CORRESPONDENTNEW YORK BRA                                                                                                                                                                                                                                                              BENEFICIARY CUSTOMER NAME                                                                                                               BENEFICIARY CUSTOMER NAME                                                                                                                          /REC/INSTRUCTION FOR RECEIVER                                                                                                                                           00015000USD    SHAUSD</Payload>__</Input>__
+Mar 14, 2017 10:33:03 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertcbtomt
+Mar 14, 2017 10:33:03 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation CobCbToMTFlow
+Mar 14, 2017 10:33:03 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>PTSAIN10-103-NVR-0006 0000            000000USD091120  000000000015000SPXAIN N                                                                      RECEIVERS CORRESPONDENT           NEW YORK BRANCH                                                                                                                                                                      RECEIVERS CORRESPONDENTNEW YORK BRA                                                                                                                                                                                                                                                              BENEFICIARY CUSTOMER NAME                                                                                                               BENEFICIARY CUSTOMER NAME                                                                                                                          /REC/INSTRUCTION FOR RECEIVER                                                                                                                                           00015000USD    SHAUSD</Payload>__</Input>__
+Mar 14, 2017 10:35:31 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertcbtomt
+Mar 14, 2017 10:35:31 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation CobCbToMTFlow
+Mar 14, 2017 10:35:31 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>PTSAIN10-103-NVR-0006 0000            000000USD091120  000000000015000SPXAIN N                                                                      RECEIVERS CORRESPONDENT           NEW YORK BRANCH                                                                                                                                                                      RECEIVERS CORRESPONDENTNEW YORK BRA                                                                                                                                                                                                                                                              BENEFICIARY CUSTOMER NAME                                                                                                               BENEFICIARY CUSTOMER NAME                                                                                                                          /REC/INSTRUCTION FOR RECEIVER                                                                                                                                           00015000USD    SHAUSD</Payload>__</Input>__
+Mar 14, 2017 10:35:52 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertcbtomt
+Mar 14, 2017 10:35:52 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation CobCbToMTFlow
+Mar 14, 2017 10:35:52 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>PTSAIN10-103-NVR-0006 0000            000000USD091120  000000000015000SPXAIN N                                                                      RECEIVERS CORRESPONDENT           NEW YORK BRANCH                                                                                                                                                                      RECEIVERS CORRESPONDENTNEW YORK BRA                                                                                                                                                                                                                                                              BENEFICIARY CUSTOMER NAME                                                                                                               BENEFICIARY CUSTOMER NAME                                                                                                                          /REC/INSTRUCTION FOR RECEIVER                                                                                                                                           00015000USD    SHAUSD</Payload>__</Input>__
+Mar 14, 2017 10:35:53 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertcbtomt
+Mar 14, 2017 10:35:53 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation CobCbToMTFlow
+Mar 14, 2017 10:35:53 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>PTSAIN10-103-NVR-0006 0000            000000USD091120  000000000015000SPXAIN N                                                                      RECEIVERS CORRESPONDENT           NEW YORK BRANCH                                                                                                                                                                      RECEIVERS CORRESPONDENTNEW YORK BRA                                                                                                                                                                                                                                                              BENEFICIARY CUSTOMER NAME                                                                                                               BENEFICIARY CUSTOMER NAME                                                                                                                          /REC/INSTRUCTION FOR RECEIVER                                                                                                                                           00015000USD    SHAUSD</Payload>__</Input>__
+Mar 14, 2017 10:35:54 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertcbtomt
+Mar 14, 2017 10:35:54 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation CobCbToMTFlow
+Mar 14, 2017 10:35:54 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>PTSAIN10-103-NVR-0006 0000            000000USD091120  000000000015000SPXAIN N                                                                      RECEIVERS CORRESPONDENT           NEW YORK BRANCH                                                                                                                                                                      RECEIVERS CORRESPONDENTNEW YORK BRA                                                                                                                                                                                                                                                              BENEFICIARY CUSTOMER NAME                                                                                                               BENEFICIARY CUSTOMER NAME                                                                                                                          /REC/INSTRUCTION FOR RECEIVER                                                                                                                                           00015000USD    SHAUSD</Payload>__</Input>__
+Mar 14, 2017 10:39:51 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertcbtomt
+Mar 14, 2017 10:39:51 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation CobCbToMTFlow
+Mar 14, 2017 10:39:51 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>PTSAIN10-103-NVR-0006 0000            000000USD091120  000000000015000SPXAIN N                                                                      RECEIVERS CORRESPONDENT           NEW YORK BRANCH                                                                                                                                                                      RECEIVERS CORRESPONDENTNEW YORK BRA                                                                                                                                                                                                                                                              BENEFICIARY CUSTOMER NAME                                                                                                               BENEFICIARY CUSTOMER NAME                                                                                                                          /REC/INSTRUCTION FOR RECEIVER                                                                                                                                           00015000USD    SHAUSD</Payload>__</Input>__
+Mar 14, 2017 10:39:58 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertcbtomt
+Mar 14, 2017 10:39:58 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation CobCbToMTFlow
+Mar 14, 2017 10:39:58 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>PTSAIN10-103-NVR-0006 0000            000000USD091120  000000000015000SPXAIN N                                                                      RECEIVERS CORRESPONDENT           NEW YORK BRANCH                                                                                                                                                                      RECEIVERS CORRESPONDENTNEW YORK BRA                                                                                                                                                                                                                                                              BENEFICIARY CUSTOMER NAME                                                                                                               BENEFICIARY CUSTOMER NAME                                                                                                                          /REC/INSTRUCTION FOR RECEIVER                                                                                                                                           00015000USD    SHAUSD</Payload>__</Input>__
+Mar 14, 2017 10:40:48 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 10:40:49 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 14, 2017 10:40:49 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@93549a]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@978954]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:40:49 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [com.tplus.transform.runtime.formula.DateFunctions$1] (value [com.tplus.transform.runtime.formula.DateFunctions$1@b91a50]) and a value of type [java.util.GregorianCalendar] (value [java.util.GregorianCalendar[time=1489449600000,areFieldsSet=true,areAllFieldsSet=false,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Europe/London",offset=0,dstSavings=3600000,useDaylight=true,transitions=242,lastRule=java.util.SimpleTimeZone[id=Europe/London,offset=0,dstSavings=3600000,useDaylight=true,startYear=0,startMode=2,startMonth=2,startDay=-1,startDayOfWeek=1,startTime=3600000,startTimeMode=2,endMode=2,endMonth=9,endDay=-1,endDayOfWeek=1,endTime=3600000,endTimeMode=2]],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=?,YEAR=2017,MONTH=2,WEEK_OF_YEAR=?,WEEK_OF_MONTH=?,DAY_OF_MONTH=14,DAY_OF_YEAR=?,DAY_OF_WEEK=?,DAY_OF_WEEK_IN_MONTH=?,AM_PM=?,HOUR=?,HOUR_OF_DAY=?,MINUTE=?,SECOND=?,MILLISECOND=?,ZONE_OFFSET=?,DST_OFFSET=?]]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:40:49 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e9226]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@13d3b95]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:40:49 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [com.tplus.transform.lang.FloatingDecimal$1] (value [com.tplus.transform.lang.FloatingDecimal$1@112ed47]) and a value of type [char[]] (value [[C@198073c]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:40:49 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [com.tplus.transform.runtime.formula.DateFunctions$1] (value [com.tplus.transform.runtime.formula.DateFunctions$1@b91a50]) and a value of type [java.util.GregorianCalendar] (value [java.util.GregorianCalendar[time=1489449600000,areFieldsSet=true,areAllFieldsSet=false,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Europe/London",offset=0,dstSavings=3600000,useDaylight=true,transitions=242,lastRule=java.util.SimpleTimeZone[id=Europe/London,offset=0,dstSavings=3600000,useDaylight=true,startYear=0,startMode=2,startMonth=2,startDay=-1,startDayOfWeek=1,startTime=3600000,startTimeMode=2,endMode=2,endMonth=9,endDay=-1,endDayOfWeek=1,endTime=3600000,endTimeMode=2]],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=?,YEAR=2017,MONTH=2,WEEK_OF_YEAR=?,WEEK_OF_MONTH=?,DAY_OF_MONTH=14,DAY_OF_YEAR=?,DAY_OF_WEEK=?,DAY_OF_WEEK_IN_MONTH=?,AM_PM=?,HOUR=?,HOUR_OF_DAY=?,MINUTE=?,SECOND=?,MILLISECOND=?,ZONE_OFFSET=?,DST_OFFSET=?]]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:40:49 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e9226]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@30872]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:40:49 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@93549a]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@11faccb]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:40:49 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [com.tplus.transform.lang.FloatingDecimal$1] (value [com.tplus.transform.lang.FloatingDecimal$1@112ed47]) and a value of type [char[]] (value [[C@89481a]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:40:49 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 10:41:28 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.8.0_102\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.3.3\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;.
+Mar 14, 2017 10:41:28 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 10:41:28 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 10:41:29 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 10:41:29 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 311 ms
+Mar 14, 2017 10:41:29 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 14, 2017 10:41:29 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Mar 14, 2017 10:41:29 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Mar 14, 2017 10:41:29 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Mar 14, 2017 10:41:29 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive CBLMT_REST.war
+Mar 14, 2017 10:41:29 PM com.tplus.transform.runtime.rest.server.VolanteRestServlet init
+INFO: Initializing REST Servlet at - /CBLMT_REST
+Mar 14, 2017 10:41:29 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Mar 14, 2017 10:41:29 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Mar 14, 2017 10:41:29 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Mar 14, 2017 10:41:29 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 10:41:29 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 14, 2017 10:41:29 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/12  config=null
+Mar 14, 2017 10:41:29 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 678 ms
+Mar 14, 2017 10:44:05 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertcbtomt
+Mar 14, 2017 10:44:05 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation CobCbToMTFlow
+Mar 14, 2017 10:44:05 PM com.tplus.transform.runtime.simple.SimpleServer getInstance
+INFO: Starting Simple runtime ...
+Mar 14, 2017 10:44:06 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>PTSAIN10-103-NVR-0006 0000            000000USD091120  000000000015000SPXAIN N                                                                      RECEIVERS CORRESPONDENT           NEW YORK BRANCH                                                                                                                                                                      RECEIVERS CORRESPONDENTNEW YORK BRA                                                                                                                                                                                                                                                              BENEFICIARY CUSTOMER NAME                                                                                                               BENEFICIARY CUSTOMER NAME                                                                                                                          /REC/INSTRUCTION FOR RECEIVER                                                                                                                                           00015000USD    SHAUSD</Payload>__</Input>__
+Mar 14, 2017 10:45:48 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 10:45:49 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 14, 2017 10:45:49 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@18ea7e1]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@afbf38]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:45:49 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [com.tplus.transform.runtime.formula.DateFunctions$1] (value [com.tplus.transform.runtime.formula.DateFunctions$1@1837335]) and a value of type [java.util.GregorianCalendar] (value [java.util.GregorianCalendar[time=1489449600000,areFieldsSet=true,areAllFieldsSet=false,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Europe/London",offset=0,dstSavings=3600000,useDaylight=true,transitions=242,lastRule=java.util.SimpleTimeZone[id=Europe/London,offset=0,dstSavings=3600000,useDaylight=true,startYear=0,startMode=2,startMonth=2,startDay=-1,startDayOfWeek=1,startTime=3600000,startTimeMode=2,endMode=2,endMonth=9,endDay=-1,endDayOfWeek=1,endTime=3600000,endTimeMode=2]],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=?,YEAR=2017,MONTH=2,WEEK_OF_YEAR=?,WEEK_OF_MONTH=?,DAY_OF_MONTH=14,DAY_OF_YEAR=?,DAY_OF_WEEK=?,DAY_OF_WEEK_IN_MONTH=?,AM_PM=?,HOUR=?,HOUR_OF_DAY=?,MINUTE=?,SECOND=?,MILLISECOND=?,ZONE_OFFSET=?,DST_OFFSET=?]]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:45:49 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@100a79b]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@1fbe6f8]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:45:49 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [com.tplus.transform.lang.FloatingDecimal$1] (value [com.tplus.transform.lang.FloatingDecimal$1@14e60d2]) and a value of type [char[]] (value [[C@b69448]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:45:50 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 10:46:33 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.8.0_102\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.3.3\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;.
+Mar 14, 2017 10:46:33 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 10:46:33 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 10:46:33 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 10:46:33 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 343 ms
+Mar 14, 2017 10:46:33 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 14, 2017 10:46:33 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Mar 14, 2017 10:46:33 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Mar 14, 2017 10:46:33 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Mar 14, 2017 10:46:33 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive CBLMT_REST.war
+Mar 14, 2017 10:46:33 PM com.tplus.transform.runtime.rest.server.VolanteRestServlet init
+INFO: Initializing REST Servlet at - /CBLMT_REST
+Mar 14, 2017 10:46:33 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Mar 14, 2017 10:46:33 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Mar 14, 2017 10:46:33 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Mar 14, 2017 10:46:34 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 10:46:34 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 14, 2017 10:46:34 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/15  config=null
+Mar 14, 2017 10:46:34 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 713 ms
+Mar 14, 2017 10:47:01 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertcbtomt
+Mar 14, 2017 10:47:01 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation CobCbToMTFlow
+Mar 14, 2017 10:47:01 PM com.tplus.transform.runtime.simple.SimpleServer getInstance
+INFO: Starting Simple runtime ...
+Mar 14, 2017 10:47:01 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>{1:F01IRVTUS33XXXX0230023948}{2:O1030905041029TESTCNVTXXXX00004554540410291005N}{4:_:20:00074_:23B:CRTS_:32A:161118USD3,34_:50A:/12345_IRVTUS33_:52D:/D/34x_4X35x_:59A:/78922_TESTGB55XXX_:71A:SHA_:72:/REJT/12A/A2_/AC01/_/MREF/16x_/TREF/16x_/CHGS/USD1,34_/TEXT/29x_-}{5:{CHK:0664BF97687E}{TNG:}}</Payload>__</Input>__
+Mar 14, 2017 10:47:01 PM com.tplus.transform.runtime.rest.server.RestServer handle
+SEVERE: <TransformException>_	<Type>TransformException</Type>_	<Message>Cannot convert 'XXX000045545404' to 'Double'.</Message>_	<ErrorCode>SRT127</ErrorCode>_	<Severity>fatal</Severity>_	<Cascadable>true</Cascadable>_	<FieldName>CREDIT-AMOUNT</FieldName>_	<FieldID>CREDIT-AMOUNT</FieldID>_	<Internal-Code>SRT127</Internal-Code>_	<Index>55</Index>_	<line>1</line>_	<column>56</column>_	<Trace>at CobCb.parse_    at CobCbToMTFlow.Parse1(Parse CobCb)</Trace>_</TransformException>_
+Mar 14, 2017 10:48:30 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 10:48:31 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 14, 2017 10:48:31 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@19c2456]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@15c45f]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:48:31 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@10f5ade]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@116b6cd]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:48:31 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 10:49:06 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.8.0_102\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.3.3\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;.
+Mar 14, 2017 10:49:06 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 10:49:06 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 10:49:06 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 10:49:06 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 307 ms
+Mar 14, 2017 10:49:06 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 14, 2017 10:49:06 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Mar 14, 2017 10:49:06 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Mar 14, 2017 10:49:06 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Mar 14, 2017 10:49:06 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive CBLMT_REST.war
+Mar 14, 2017 10:49:07 PM com.tplus.transform.runtime.rest.server.VolanteRestServlet init
+INFO: Initializing REST Servlet at - /CBLMT_REST
+Mar 14, 2017 10:49:07 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Mar 14, 2017 10:49:07 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Mar 14, 2017 10:49:07 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Mar 14, 2017 10:49:07 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 10:49:07 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 14, 2017 10:49:07 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/14  config=null
+Mar 14, 2017 10:49:07 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 673 ms
+Mar 14, 2017 10:49:13 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertcbtomt
+Mar 14, 2017 10:49:13 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation CobCbToMTFlow
+Mar 14, 2017 10:49:13 PM com.tplus.transform.runtime.simple.SimpleServer getInstance
+INFO: Starting Simple runtime ...
+Mar 14, 2017 10:49:13 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>{1:F01IRVTUS33XXXX0230023948}{2:O1030905041029TESTCNVTXXXX00004554540410291005N}{4:_:20:00074_:23B:CRTS_:32A:161118USD3,34_:50A:/12345_IRVTUS33_:52D:/D/34x_4X35x_:59A:/78922_TESTGB55XXX_:71A:SHA_:72:/REJT/12A/A2_/AC01/_/MREF/16x_/TREF/16x_/CHGS/USD1,34_/TEXT/29x_-}{5:{CHK:0664BF97687E}{TNG:}}</Payload>__</Input>__
+Mar 14, 2017 10:49:13 PM com.tplus.transform.runtime.rest.server.RestServer handle
+SEVERE: <TransformException>_	<Type>TransformException</Type>_	<Message>Cannot convert 'XXX000045545404' to 'Double'.</Message>_	<ErrorCode>SRT127</ErrorCode>_	<Severity>fatal</Severity>_	<Cascadable>true</Cascadable>_	<FieldName>CREDIT-AMOUNT</FieldName>_	<FieldID>CREDIT-AMOUNT</FieldID>_	<Internal-Code>SRT127</Internal-Code>_	<Index>55</Index>_	<line>1</line>_	<column>56</column>_	<Trace>at CobCb.parse_    at CobCbToMTFlow.Parse1(Parse CobCb)</Trace>_</TransformException>_
+Mar 14, 2017 10:49:15 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertcbtomt
+Mar 14, 2017 10:49:15 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation CobCbToMTFlow
+Mar 14, 2017 10:49:15 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>{1:F01IRVTUS33XXXX0230023948}{2:O1030905041029TESTCNVTXXXX00004554540410291005N}{4:_:20:00074_:23B:CRTS_:32A:161118USD3,34_:50A:/12345_IRVTUS33_:52D:/D/34x_4X35x_:59A:/78922_TESTGB55XXX_:71A:SHA_:72:/REJT/12A/A2_/AC01/_/MREF/16x_/TREF/16x_/CHGS/USD1,34_/TEXT/29x_-}{5:{CHK:0664BF97687E}{TNG:}}</Payload>__</Input>__
+Mar 14, 2017 10:49:15 PM com.tplus.transform.runtime.rest.server.RestServer handle
+SEVERE: <TransformException>_	<Type>TransformException</Type>_	<Message>Cannot convert 'XXX000045545404' to 'Double'.</Message>_	<ErrorCode>SRT127</ErrorCode>_	<Severity>fatal</Severity>_	<Cascadable>true</Cascadable>_	<FieldName>CREDIT-AMOUNT</FieldName>_	<FieldID>CREDIT-AMOUNT</FieldID>_	<Internal-Code>SRT127</Internal-Code>_	<Index>55</Index>_	<line>1</line>_	<column>56</column>_	<Trace>at CobCb.parse_    at CobCbToMTFlow.Parse1(Parse CobCb)</Trace>_</TransformException>_
+Mar 14, 2017 10:50:49 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertcbtomt
+Mar 14, 2017 10:50:49 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation CobCbToMTFlow
+Mar 14, 2017 10:50:49 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>{1:F01PTSAINJJAXXX0000000000}{2:I103SPXAINJJXXXXN}{3:{108:10-103-NVR-0006}}{4:_:20:10-103-NVR-0006_:13C:/CLSTIME/0945+0100_:23B:CRED_:23E:CHQB_:32A:091120USD15000,00_:33B:USD15000,00_:50F:CCPT/US/123456PP_1/Name of the ordering customer_7/US/1234567_:52A:/D/23456789_SWHQBEBB_:53B:/D/23456789_NEW YORK BRANCH_:54D:RECEIVERS CORRESPONDENT_NEW YORK BRANCH_:55D:/456789_THIRD REIMBURSEMENT INSTITUTION_NEW YORK_:57B:NEWYORK BRANCH_:59:BENEFICIARY CUSTOMER NAME_:70:/INV/070717, 12345, INVOICE_NUMBERS 24578, 54789,_354789, 545884, 578822_:71A:SHA_:71F:USD100,00_:72:/REC/INSTRUCTION FOR RECEIVER_:77B:/ORDERRES/US//ADDITONAL INFO_//CONTINUATION OF ADDITIONAL INFO_//CONTINUATION_-}</Payload>__</Input>__
+Mar 14, 2017 10:50:49 PM com.tplus.transform.runtime.rest.server.RestServer handle
+SEVERE: <TransformException>_	<Type>TransformException</Type>_	<Message>Cannot convert '08:10-103-NVR-0' to 'Double'.</Message>_	<ErrorCode>SRT127</ErrorCode>_	<Severity>fatal</Severity>_	<Cascadable>true</Cascadable>_	<FieldName>CREDIT-AMOUNT</FieldName>_	<FieldID>CREDIT-AMOUNT</FieldID>_	<Internal-Code>SRT127</Internal-Code>_	<Index>55</Index>_	<line>1</line>_	<column>56</column>_	<Trace>at CobCb.parse_    at CobCbToMTFlow.Parse1(Parse CobCb)</Trace>_</TransformException>_
+Mar 14, 2017 10:52:51 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertmttocb
+Mar 14, 2017 10:52:51 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation MTToCobCbFlow
+Mar 14, 2017 10:52:51 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>{1:F01PTSAINJJAXXX0000000000}{2:I103SPXAINJJXXXXN}{3:{108:10-103-NVR-0006}}{4:_:20:10-103-NVR-0006_:13C:/CLSTIME/0945+0100_:23B:CRED_:23E:CHQB_:32A:091120USD15000,00_:33B:USD15000,00_:50F:CCPT/US/123456PP_1/Name of the ordering customer_7/US/1234567_:52A:/D/23456789_SWHQBEBB_:53B:/D/23456789_NEW YORK BRANCH_:54D:RECEIVERS CORRESPONDENT_NEW YORK BRANCH_:55D:/456789_THIRD REIMBURSEMENT INSTITUTION_NEW YORK_:57B:NEWYORK BRANCH_:59:BENEFICIARY CUSTOMER NAME_:70:/INV/070717, 12345, INVOICE_NUMBERS 24578, 54789,_354789, 545884, 578822_:71A:SHA_:71F:USD100,00_:72:/REC/INSTRUCTION FOR RECEIVER_:77B:/ORDERRES/US//ADDITONAL INFO_//CONTINUATION OF ADDITIONAL INFO_//CONTINUATION_-}</Payload>__</Input>__
+Mar 14, 2017 10:52:51 PM com.tplus.transform.runtime.rest.server.RestServer handle
+SEVERE: com.tplus.transform.runtime.TransformNullValueException: Attempt to access field 'rawMT' with null value
+Mar 14, 2017 10:53:22 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertcbtomt
+Mar 14, 2017 10:53:22 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation CobCbToMTFlow
+Mar 14, 2017 10:53:22 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>PTSAIN10-103-NVR-0006 0000            000000USD091120  000000000015000SPXAIN N                                                                      RECEIVERS CORRESPONDENT           NEW YORK BRANCH                                                                                                                                                                      RECEIVERS CORRESPONDENTNEW YORK BRA                                                                                                                                                                                                                                                              BENEFICIARY CUSTOMER NAME                                                                                                               BENEFICIARY CUSTOMER NAME                                                                                                                          /REC/INSTRUCTION FOR RECEIVER                                                                                                                                           00015000USD    SHAUSD</Payload>__</Input>__
+Mar 14, 2017 10:55:45 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 10:55:46 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 14, 2017 10:55:46 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@1f23fa8]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@13166fc]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:55:46 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [com.tplus.transform.runtime.formula.DateFunctions$1] (value [com.tplus.transform.runtime.formula.DateFunctions$1@14849f5]) and a value of type [java.util.GregorianCalendar] (value [java.util.GregorianCalendar[time=1489449600000,areFieldsSet=true,areAllFieldsSet=false,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Europe/London",offset=0,dstSavings=3600000,useDaylight=true,transitions=242,lastRule=java.util.SimpleTimeZone[id=Europe/London,offset=0,dstSavings=3600000,useDaylight=true,startYear=0,startMode=2,startMonth=2,startDay=-1,startDayOfWeek=1,startTime=3600000,startTimeMode=2,endMode=2,endMonth=9,endDay=-1,endDayOfWeek=1,endTime=3600000,endTimeMode=2]],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=?,YEAR=2017,MONTH=2,WEEK_OF_YEAR=?,WEEK_OF_MONTH=?,DAY_OF_MONTH=14,DAY_OF_YEAR=?,DAY_OF_WEEK=?,DAY_OF_WEEK_IN_MONTH=?,AM_PM=?,HOUR=?,HOUR_OF_DAY=?,MINUTE=?,SECOND=?,MILLISECOND=?,ZONE_OFFSET=?,DST_OFFSET=?]]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:55:46 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@ef9969]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@40d17e]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:55:46 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/CBLMT_REST] created a ThreadLocal with key of type [com.tplus.transform.lang.FloatingDecimal$1] (value [com.tplus.transform.lang.FloatingDecimal$1@12906e4]) and a value of type [char[]] (value [[C@838f70]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 14, 2017 10:55:47 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 10:56:32 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.8.0_102\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.3.3\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;.
+Mar 14, 2017 10:56:32 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 10:56:32 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Mar 14, 2017 10:56:32 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 10:56:32 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 298 ms
+Mar 14, 2017 10:56:32 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 14, 2017 10:56:32 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Mar 14, 2017 10:56:32 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Mar 14, 2017 10:56:32 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Mar 14, 2017 10:56:32 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive CBLMT_REST.war
+Mar 14, 2017 10:56:32 PM com.tplus.transform.runtime.rest.server.VolanteRestServlet init
+INFO: Initializing REST Servlet at - /CBLMT_REST
+Mar 14, 2017 10:56:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Mar 14, 2017 10:56:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Mar 14, 2017 10:56:33 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Mar 14, 2017 10:56:33 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Mar 14, 2017 10:56:33 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 14, 2017 10:56:33 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/10  config=null
+Mar 14, 2017 10:56:33 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 664 ms
+Mar 14, 2017 10:56:53 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertmttocb
+Mar 14, 2017 10:56:53 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation MTToCobCbFlow
+Mar 14, 2017 10:56:53 PM com.tplus.transform.runtime.simple.SimpleServer getInstance
+INFO: Starting Simple runtime ...
+Mar 14, 2017 10:56:53 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>{1:F01PTSAINJJAXXX0000000000}{2:I103SPXAINJJXXXXN}{3:{108:10-103-NVR-0006}}{4:_:20:10-103-NVR-0006_:13C:/CLSTIME/0945+0100_:23B:CRED_:23E:CHQB_:32A:091120USD15000,00_:33B:USD15000,00_:50F:CCPT/US/123456PP_1/Name of the ordering customer_7/US/1234567_:52A:/D/23456789_SWHQBEBB_:53B:/D/23456789_NEW YORK BRANCH_:54D:RECEIVERS CORRESPONDENT_NEW YORK BRANCH_:55D:/456789_THIRD REIMBURSEMENT INSTITUTION_NEW YORK_:57B:NEWYORK BRANCH_:59:BENEFICIARY CUSTOMER NAME_:70:/INV/070717, 12345, INVOICE_NUMBERS 24578, 54789,_354789, 545884, 578822_:71A:SHA_:71F:USD100,00_:72:/REC/INSTRUCTION FOR RECEIVER_:77B:/ORDERRES/US//ADDITONAL INFO_//CONTINUATION OF ADDITIONAL INFO_//CONTINUATION_-}</Payload>__</Input>__
+Mar 14, 2017 10:58:31 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertcbtomt
+Mar 14, 2017 10:58:31 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation CobCbToMTFlow
+Mar 14, 2017 10:58:31 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>PTSAIN10-103-NVR-0006 0000            000000USD091120  000000000015000SPXAIN N                                                                      RECEIVERS CORRESPONDENT           NEW YORK BRANCH                                                                                                                                                                      RECEIVERS CORRESPONDENTNEW YORK BRA                                                                                                                                                                                                                                                              BENEFICIARY CUSTOMER NAME                                                                                                               BENEFICIARY CUSTOMER NAME                                                                                                                          /REC/INSTRUCTION FOR RECEIVER                                                                                                                                           00015000USD    SHAUSD</Payload>__</Input>__
+Mar 14, 2017 10:58:57 PM com.tplus.transform.runtime.rest.server.RestServer info
+INFO: REST RequestURI=/CBLMT_REST/rest/convertmttocb
+Mar 14, 2017 10:58:57 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Matching operation MTToCobCbFlow
+Mar 14, 2017 10:58:57 PM com.tplus.transform.runtime.rest.server.RestServer handleImpl
+INFO: Param Value = <?xml version="1.0" encoding="UTF-8"?>__<Input>__	<Payload>{1:F01PTSAINJJAXXX0000000000}{2:I103SPXAINJJXXXXN}{3:{108:10-103-NVR-0006}}{4:_:20:10-103-NVR-0006_:13C:/CLSTIME/0945+0100_:23B:CRED_:23E:CHQB_:32A:091120USD15000,00_:33B:USD15000,00_:50F:CCPT/US/123456PP_1/Name of the ordering customer_7/US/1234567_:52A:/D/23456789_SWHQBEBB_:53B:/D/23456789_NEW YORK BRANCH_:54D:RECEIVERS CORRESPONDENT_NEW YORK BRANCH_:55D:/456789_THIRD REIMBURSEMENT INSTITUTION_NEW YORK_:57B:NEWYORK BRANCH_:59:BENEFICIARY CUSTOMER NAME_:70:/INV/070717, 12345, INVOICE_NUMBERS 24578, 54789,_354789, 545884, 578822_:71A:SHA_:71F:USD100,00_:72:/REC/INSTRUCTION FOR RECEIVER_:77B:/ORDERRES/US//ADDITONAL INFO_//CONTINUATION OF ADDITIONAL INFO_//CONTINUATION_-}</Payload>__</Input>__

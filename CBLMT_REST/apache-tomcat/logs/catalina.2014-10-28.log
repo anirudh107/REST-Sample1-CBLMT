@@ -1,0 +1,58 @@
+Oct 28, 2014 12:24:56 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.7.0_60\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.0.4\bin;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.
+Oct 28, 2014 12:24:56 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Oct 28, 2014 12:24:56 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Oct 28, 2014 12:24:57 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Oct 28, 2014 12:24:57 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2547 ms
+Oct 28, 2014 12:24:58 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 28, 2014 12:24:58 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Oct 28, 2014 12:25:00 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Oct 28, 2014 12:25:00 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Oct 28, 2014 12:25:00 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive messageprocessor.war
+Oct 28, 2014 12:27:47 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.7.0_60\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.0.4\bin;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.
+Oct 28, 2014 12:27:47 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Oct 28, 2014 12:27:47 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Oct 28, 2014 12:27:47 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Oct 28, 2014 12:27:47 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 393 ms
+Oct 28, 2014 12:27:47 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 28, 2014 12:27:47 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Oct 28, 2014 12:27:47 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Oct 28, 2014 12:27:47 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Oct 28, 2014 12:27:47 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive messageprocessor.war
+Oct 28, 2014 12:27:47 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive sadcdemodash.war
+Oct 28, 2014 12:27:48 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive vte.war
+Oct 28, 2014 12:27:48 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Oct 28, 2014 12:27:49 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Oct 28, 2014 12:27:49 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Oct 28, 2014 12:27:49 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Oct 28, 2014 12:27:49 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Oct 28, 2014 12:27:49 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/40  config=null
+Oct 28, 2014 12:27:49 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2166 ms

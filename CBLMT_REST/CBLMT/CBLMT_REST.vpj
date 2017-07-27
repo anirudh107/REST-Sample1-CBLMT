@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="CBLMT_REST" type="VolanteProject">
+	<version>1.0</version>
+	<folder-set root=".">
+	</folder-set>
+	<workspace>
+		<selected-element root="D:\Volante_Installs\Demos\REST\CBLMT_REST\CBLMT\MsgProcessing.car">MsgProcessing/CB To MT/MTToCobCbFlow</selected-element>
+		<open-files>
+			<file>MsgProcessing.car</file>
+		</open-files>
+		<recent-files>
+			<file>CBLMT\MsgProcessing.car</file>
+		</recent-files>
+	</workspace>
+	<elementproperties>
+		<propertymap>
+			<property name="DOCUMENT_PROPERTIES">
+				<value>
+					<propertymap>
+						<property name="Creation Time" value="Tue Mar 14 16:27:43 GMT 2017"/>
+						<property name="Author" value="ChrisStares"/>
+						<property name="Title" value="CBLMT_REST"/>
+						<property name="Client Id" value="chris.stares@volantetech.com"/>
+						<property name="Last Author" value="ChrisStares"/>
+						<property name="Last Save Time" value="Wed Mar 15 00:55:41 IST 2017"/>
+						<property name="Designer Build" value="1631"/>
+						<property name="Revision Number" value="16"/>
+					</propertymap>
+				</value>
+			</property>
+			<property name="codegen.java.options">
+				<value>
+					<propertymap type="com.tplus.transform.design.codegen.java.JavaCodeGeneratorOptions">
+						<property name="isJBoss" value="true"/>
+						<property name="war-options">
+							<value>
+								<propertymap>
+								</propertymap>
+							</value>
+						</property>
+						<property name="isOSGI" value="true"/>
+						<property name="isEJB" value="true"/>
+						<property name="isWebSphere" value="true"/>
+						<property name="isVolante" value="true"/>
+						<property name="isRemote" value="true"/>
+						<property name="isWebLogic" value="true"/>
+						<property name="isWLEVS" value="false"/>
+						<property name="resource-references">
+							<value>
+								<propertylist>
+								</propertylist>
+							</value>
+						</property>
+						<property name="isWAR" value="true"/>
+						<property name="osgi-options">
+							<value>
+								<propertymap>
+									<property name="include-dependencies" value="false"/>
+								</propertymap>
+							</value>
+						</property>
+						<property name="isGenerateALSB" value="false"/>
+						<property name="isOrion" value="true"/>
+						<property name="isLocal" value="true"/>
+						<property name="isGenerateJNDILinks" value="true"/>
+						<property name="isGeronimo" value="true"/>
+						<property name="isGenerateEAR" value="false"/>
+					</propertymap>
+				</value>
+			</property>
+			<property name="codegen.java.general">
+				<value>
+					<propertymap>
+						<property name="debugInfo" value="false"/>
+					</propertymap>
+				</value>
+			</property>
+		</propertymap>
+	</elementproperties>
+</project>
+

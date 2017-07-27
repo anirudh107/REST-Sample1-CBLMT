@@ -1,0 +1,36 @@
+May 13, 2015 11:51:51 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.7.0_60\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.0.4\bin;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files (x86)\Skype\Phone\;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.;;.
+May 13, 2015 11:51:51 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+May 13, 2015 11:51:51 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+May 13, 2015 11:51:52 AM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+May 13, 2015 11:51:52 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1993 ms
+May 13, 2015 11:51:52 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+May 13, 2015 11:51:52 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+May 13, 2015 11:51:55 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+May 13, 2015 11:51:55 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+May 13, 2015 11:51:55 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive messageprocessor.war
+May 13, 2015 11:51:57 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive vte.war
+May 13, 2015 11:51:58 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+May 13, 2015 11:51:58 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+May 13, 2015 11:51:58 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+May 13, 2015 11:51:58 AM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+May 13, 2015 11:51:59 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+May 13, 2015 11:51:59 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/51  config=null
+May 13, 2015 11:51:59 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6448 ms

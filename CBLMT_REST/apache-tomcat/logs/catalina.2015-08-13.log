@@ -1,0 +1,624 @@
+Aug 13, 2015 9:58:06 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.7.0_60\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.0.4\bin;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files (x86)\Skype\Phone\;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.;;.
+Aug 13, 2015 9:58:06 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 9:58:06 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 9:58:07 AM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 9:58:07 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1826 ms
+Aug 13, 2015 9:58:07 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 13, 2015 9:58:07 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Aug 13, 2015 9:58:10 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Aug 13, 2015 9:58:10 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Aug 13, 2015 9:58:10 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive messageprocessor.war
+Aug 13, 2015 9:58:10 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive vte.war
+Aug 13, 2015 9:58:11 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Aug 13, 2015 9:58:11 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Aug 13, 2015 9:58:11 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Aug 13, 2015 9:58:12 AM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 9:58:12 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 13, 2015 9:58:12 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/39  config=null
+Aug 13, 2015 9:58:12 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4533 ms
+Aug 13, 2015 9:59:13 AM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 9:59:14 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 13, 2015 9:59:14 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/messageprocessor] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 13, 2015 9:59:14 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6aa6f3]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@1f6a2e9]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 9:59:14 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@141ae93]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@12c7523]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 9:59:14 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6aa6f3]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@1be7fb2]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 9:59:14 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@141ae93]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@1b1be96]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 9:59:14 AM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 9:59:43 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.7.0_60\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.0.4\bin;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files (x86)\Skype\Phone\;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.;;.
+Aug 13, 2015 9:59:43 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 9:59:43 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 9:59:43 AM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 9:59:43 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 292 ms
+Aug 13, 2015 9:59:43 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 13, 2015 9:59:43 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Aug 13, 2015 9:59:43 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Aug 13, 2015 9:59:43 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Aug 13, 2015 9:59:44 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive messageprocessor.war
+Aug 13, 2015 9:59:44 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive vte.war
+Aug 13, 2015 9:59:44 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Aug 13, 2015 9:59:44 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Aug 13, 2015 9:59:44 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Aug 13, 2015 9:59:44 AM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 9:59:44 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 13, 2015 9:59:44 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/13  config=null
+Aug 13, 2015 9:59:44 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 768 ms
+Aug 13, 2015 10:23:46 AM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:23:47 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 13, 2015 10:23:47 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/messageprocessor] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 13, 2015 10:23:47 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@1912b66]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@1b874ea]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 10:23:47 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.lang.FloatingDecimal$1] (value [com.tplus.transform.lang.FloatingDecimal$1@7e826b]) and a value of type [char[]] (value [[C@1a4756c]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 10:23:47 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@191194]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@1d12330]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 10:23:47 AM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:28:13 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.7.0_60\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.0.4\bin;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files (x86)\Skype\Phone\;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.;;.
+Aug 13, 2015 10:28:13 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 10:28:13 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 10:28:13 AM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:28:13 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 305 ms
+Aug 13, 2015 10:28:13 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 13, 2015 10:28:13 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Aug 13, 2015 10:28:14 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Aug 13, 2015 10:28:14 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Aug 13, 2015 10:28:14 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive messageprocessor.dynamic_user_permissions_Aqua_Global.war
+Aug 13, 2015 10:28:14 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive messageprocessor.war
+Aug 13, 2015 10:28:14 AM org.apache.catalina.session.StandardManager doLoad
+SEVERE: ClassNotFoundException while loading persisted sessions: java.lang.ClassNotFoundException: com.transform.internal.iso8583_asciiim.ISO8583_ASCIIIMNormalizedObject
+java.lang.ClassNotFoundException: com.transform.internal.iso8583_asciiim.ISO8583_ASCIIIMNormalizedObject
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1680)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.catalina.util.CustomObjectInputStream.resolveClass(CustomObjectInputStream.java:75)
+	at java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.io.ObjectInputStream.readOrdinaryObject(Unknown Source)
+	at java.io.ObjectInputStream.readObject0(Unknown Source)
+	at java.io.ObjectInputStream.readObject(Unknown Source)
+	at org.apache.catalina.session.StandardSession.readObject(StandardSession.java:1509)
+	at org.apache.catalina.session.StandardSession.readObjectData(StandardSession.java:998)
+	at org.apache.catalina.session.StandardManager.doLoad(StandardManager.java:394)
+	at org.apache.catalina.session.StandardManager.load(StandardManager.java:321)
+	at org.apache.catalina.session.StandardManager.start(StandardManager.java:648)
+	at org.apache.catalina.core.ContainerBase.setManager(ContainerBase.java:446)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4631)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:943)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:778)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:504)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1317)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:324)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1065)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:840)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1057)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:754)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+
+Aug 13, 2015 10:28:14 AM org.apache.catalina.session.StandardManager start
+SEVERE: Exception loading sessions from persistent storage
+java.lang.ClassNotFoundException: com.transform.internal.iso8583_asciiim.ISO8583_ASCIIIMNormalizedObject
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1680)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.catalina.util.CustomObjectInputStream.resolveClass(CustomObjectInputStream.java:75)
+	at java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.io.ObjectInputStream.readOrdinaryObject(Unknown Source)
+	at java.io.ObjectInputStream.readObject0(Unknown Source)
+	at java.io.ObjectInputStream.readObject(Unknown Source)
+	at org.apache.catalina.session.StandardSession.readObject(StandardSession.java:1509)
+	at org.apache.catalina.session.StandardSession.readObjectData(StandardSession.java:998)
+	at org.apache.catalina.session.StandardManager.doLoad(StandardManager.java:394)
+	at org.apache.catalina.session.StandardManager.load(StandardManager.java:321)
+	at org.apache.catalina.session.StandardManager.start(StandardManager.java:648)
+	at org.apache.catalina.core.ContainerBase.setManager(ContainerBase.java:446)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4631)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:943)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:778)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:504)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1317)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:324)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1065)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:840)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1057)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:754)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+
+Aug 13, 2015 10:28:14 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive vte.war
+Aug 13, 2015 10:28:14 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Aug 13, 2015 10:28:14 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Aug 13, 2015 10:28:15 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Aug 13, 2015 10:28:15 AM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:28:15 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 13, 2015 10:28:15 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/13  config=null
+Aug 13, 2015 10:28:15 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1356 ms
+Aug 13, 2015 10:28:33 AM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:28:34 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 13, 2015 10:28:34 AM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:29:08 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.7.0_60\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.0.4\bin;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files (x86)\Skype\Phone\;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.;;.
+Aug 13, 2015 10:29:08 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 10:29:08 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 10:29:09 AM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:29:09 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 305 ms
+Aug 13, 2015 10:29:09 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 13, 2015 10:29:09 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Aug 13, 2015 10:29:09 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Aug 13, 2015 10:29:09 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Aug 13, 2015 10:29:09 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive messageprocessor.war
+Aug 13, 2015 10:29:09 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive vte.war
+Aug 13, 2015 10:29:09 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Aug 13, 2015 10:29:09 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Aug 13, 2015 10:29:09 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Aug 13, 2015 10:29:09 AM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:29:09 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 13, 2015 10:29:09 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/13  config=null
+Aug 13, 2015 10:29:09 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 811 ms
+Aug 13, 2015 10:31:11 AM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:31:12 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 13, 2015 10:31:12 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/messageprocessor] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 13, 2015 10:31:12 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@1aa6b1f]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@15edab8]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 10:31:12 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.lang.FloatingDecimal$1] (value [com.tplus.transform.lang.FloatingDecimal$1@1a09508]) and a value of type [char[]] (value [[C@1985384]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 10:31:12 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@19328f5]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@6621f2]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 10:31:12 AM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:32:06 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.7.0_60\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.0.4\bin;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files (x86)\Skype\Phone\;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.;;.
+Aug 13, 2015 10:32:06 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 10:32:06 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 10:32:06 AM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:32:07 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 320 ms
+Aug 13, 2015 10:32:07 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 13, 2015 10:32:07 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Aug 13, 2015 10:32:07 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Aug 13, 2015 10:32:07 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Aug 13, 2015 10:32:07 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive messageprocessor.war
+Aug 13, 2015 10:32:07 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive vte.war
+Aug 13, 2015 10:32:07 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Aug 13, 2015 10:32:07 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Aug 13, 2015 10:32:07 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Aug 13, 2015 10:32:07 AM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:32:07 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 13, 2015 10:32:07 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/12  config=null
+Aug 13, 2015 10:32:07 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 594 ms
+Aug 13, 2015 10:34:56 AM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:34:57 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 13, 2015 10:34:57 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/messageprocessor] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 13, 2015 10:34:57 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@a66284]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@18de009]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 10:34:57 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.lang.FloatingDecimal$1] (value [com.tplus.transform.lang.FloatingDecimal$1@16f863c]) and a value of type [char[]] (value [[C@d5eca6]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 10:34:57 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@a3ba02]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@108e5f1]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 10:34:57 AM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:36:28 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.7.0_60\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.0.4\bin;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files (x86)\Skype\Phone\;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.;;.
+Aug 13, 2015 10:36:28 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 10:36:28 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 10:36:28 AM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:36:28 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 309 ms
+Aug 13, 2015 10:36:28 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 13, 2015 10:36:28 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Aug 13, 2015 10:36:29 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Aug 13, 2015 10:36:29 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Aug 13, 2015 10:36:29 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive messageprocessor.war
+Aug 13, 2015 10:36:29 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive vte.war
+Aug 13, 2015 10:36:29 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Aug 13, 2015 10:36:29 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Aug 13, 2015 10:36:29 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Aug 13, 2015 10:36:29 AM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:36:29 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 13, 2015 10:36:29 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/15  config=null
+Aug 13, 2015 10:36:29 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1006 ms
+Aug 13, 2015 10:38:23 AM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:38:24 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 13, 2015 10:38:24 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/messageprocessor] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 13, 2015 10:38:24 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@16ccee5]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@834b47]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 10:38:24 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@1c34575]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@105084e]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 10:38:25 AM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:39:39 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.7.0_60\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.0.4\bin;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files (x86)\Skype\Phone\;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.;;.
+Aug 13, 2015 10:39:39 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 10:39:39 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 10:39:39 AM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:39:39 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 307 ms
+Aug 13, 2015 10:39:39 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 13, 2015 10:39:39 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Aug 13, 2015 10:39:40 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Aug 13, 2015 10:39:40 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Aug 13, 2015 10:39:40 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive messageprocessor.war
+Aug 13, 2015 10:39:40 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive vte.war
+Aug 13, 2015 10:39:40 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Aug 13, 2015 10:39:40 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Aug 13, 2015 10:39:40 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Aug 13, 2015 10:39:40 AM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:39:40 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 13, 2015 10:39:40 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/13  config=null
+Aug 13, 2015 10:39:40 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 864 ms
+Aug 13, 2015 10:40:01 AM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:40:02 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 13, 2015 10:40:02 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/messageprocessor] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 13, 2015 10:40:02 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@18281f1]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@1211aeb]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 10:40:02 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@6e4629]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@1c06e97]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 10:40:03 AM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:42:12 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.7.0_60\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.0.4\bin;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files (x86)\Skype\Phone\;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.;;.
+Aug 13, 2015 10:42:12 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 10:42:12 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 10:42:12 AM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:42:12 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 310 ms
+Aug 13, 2015 10:42:12 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 13, 2015 10:42:12 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Aug 13, 2015 10:42:13 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Aug 13, 2015 10:42:13 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Aug 13, 2015 10:42:13 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive messageprocessor.war
+Aug 13, 2015 10:42:13 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive vte.war
+Aug 13, 2015 10:42:13 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Aug 13, 2015 10:42:13 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Aug 13, 2015 10:42:13 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Aug 13, 2015 10:42:13 AM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:42:13 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 13, 2015 10:42:13 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/13  config=null
+Aug 13, 2015 10:42:13 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 889 ms
+Aug 13, 2015 10:48:20 AM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:48:21 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 13, 2015 10:48:21 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/messageprocessor] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 13, 2015 10:48:21 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@f7696]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@1328145]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 10:48:21 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.lang.FloatingDecimal$1] (value [com.tplus.transform.lang.FloatingDecimal$1@c4ddba]) and a value of type [char[]] (value [[C@b908c9]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 10:48:21 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@1f00311]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@59562f]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 10:48:22 AM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:55:16 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.7.0_60\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.0.4\bin;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files (x86)\Skype\Phone\;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.;;.
+Aug 13, 2015 10:55:16 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 10:55:16 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 10:55:16 AM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:55:16 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 311 ms
+Aug 13, 2015 10:55:16 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 13, 2015 10:55:16 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Aug 13, 2015 10:55:16 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Aug 13, 2015 10:55:16 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Aug 13, 2015 10:55:16 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive messageprocessor.war
+Aug 13, 2015 10:55:17 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive vte.war
+Aug 13, 2015 10:55:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Aug 13, 2015 10:55:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Aug 13, 2015 10:55:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Aug 13, 2015 10:55:17 AM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 10:55:17 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 13, 2015 10:55:17 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/13  config=null
+Aug 13, 2015 10:55:17 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1075 ms
+Aug 13, 2015 11:04:17 AM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 11:04:18 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 13, 2015 11:04:18 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/messageprocessor] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 13, 2015 11:04:18 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@c4be80]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@b6ebd9]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 11:04:18 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@13611ac]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@c2539f]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 11:04:18 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.lang.FloatingDecimal$1] (value [com.tplus.transform.lang.FloatingDecimal$1@28a2]) and a value of type [char[]] (value [[C@6bccb6]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 11:04:18 AM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 11:07:56 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.7.0_60\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.0.4\bin;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files (x86)\Skype\Phone\;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.;;.
+Aug 13, 2015 11:07:56 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 11:07:56 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 11:07:56 AM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 11:07:56 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 310 ms
+Aug 13, 2015 11:07:56 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 13, 2015 11:07:56 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Aug 13, 2015 11:07:57 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Aug 13, 2015 11:07:57 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Aug 13, 2015 11:07:57 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive messageprocessor.war
+Aug 13, 2015 11:07:57 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive vte.war
+Aug 13, 2015 11:07:57 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Aug 13, 2015 11:07:57 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Aug 13, 2015 11:07:57 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Aug 13, 2015 11:07:57 AM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 11:07:57 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 13, 2015 11:07:57 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/13  config=null
+Aug 13, 2015 11:07:57 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 591 ms
+Aug 13, 2015 11:09:35 AM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 11:09:36 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 13, 2015 11:09:36 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/messageprocessor] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 13, 2015 11:09:36 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@116d58c]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@1df488]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 11:09:36 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@1838377]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@12c34e0]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 11:09:36 AM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 11:10:06 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\IBM\MQ\java\lib;D:\IBM\MQ\java\lib64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files (x86)\jZip\jZip;C:\Program Files\Java\jdk1.7.0_60\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;D:\Volante_Installs\utils\apache-maven-3.0.4\bin;D:\IBM\MQ\bin64;D:\IBM\MQ\bin;D:\IBM\MQ\tools\c\samples\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files (x86)\Skype\Phone\;D:\MSSQLServer\Client SDK\ODBC\110\Tools\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\;D:\MSSQLServer\120\Tools\Binn\;D:\MSSQLServer\120\DTS\Binn\;D:\MSSQLServer\x86\120\Tools\Binn\ManagementStudio\;D:\MSSQLServer\x86\120\DTS\Binn\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.;;.
+Aug 13, 2015 11:10:06 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 11:10:06 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to 'true' did not find a matching property.
+Aug 13, 2015 11:10:06 AM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 11:10:06 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 310 ms
+Aug 13, 2015 11:10:06 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 13, 2015 11:10:06 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Aug 13, 2015 11:10:06 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Aug 13, 2015 11:10:06 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Aug 13, 2015 11:10:06 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive messageprocessor.war
+Aug 13, 2015 11:10:06 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive vte.war
+Aug 13, 2015 11:10:06 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Aug 13, 2015 11:10:06 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Aug 13, 2015 11:10:06 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Aug 13, 2015 11:10:06 AM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 11:10:06 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 13, 2015 11:10:06 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/12  config=null
+Aug 13, 2015 11:10:06 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 585 ms
+Aug 13, 2015 11:10:48 AM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Aug 13, 2015 11:10:49 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 13, 2015 11:10:49 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/messageprocessor] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 13, 2015 11:10:49 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@c6ff54]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@a51c9d]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 11:10:49 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@fb13cb]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@1d0af66]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2015 11:10:49 AM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090

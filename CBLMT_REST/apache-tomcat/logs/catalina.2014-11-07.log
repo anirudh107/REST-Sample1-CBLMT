@@ -1,0 +1,20 @@
+Nov 07, 2014 11:20:40 AM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Nov 07, 2014 11:20:41 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Nov 07, 2014 11:20:42 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/sadcdemodash] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Nov 07, 2014 11:20:42 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/sadcdemodash] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@1a9917]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@38e024]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Nov 07, 2014 11:20:42 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/sadcdemodash] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@36afc]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@64dae9]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Nov 07, 2014 11:20:42 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/sadcdemodash] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@1a9917]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@16034bf]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Nov 07, 2014 11:20:42 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/sadcdemodash] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@36afc]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@126fac4]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Nov 07, 2014 11:20:42 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/sadcdemodash] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@1a9917]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@198275]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Nov 07, 2014 11:20:42 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/sadcdemodash] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@36afc]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@c3d37a]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Nov 07, 2014 11:20:45 AM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090

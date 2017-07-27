@@ -1,0 +1,40 @@
+Jul 02, 2013 4:25:26 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\Volante_Installs\Volante_R500B1400\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Oracle_XE\app\oracle\product\11.2.0\server\bin;;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;D:\Program Files (x86)\jZip;C:\Program Files (x86)\Java\jre7\bin;D:\Program Files (x86)\apache-ant-1.8.4\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Volante_Installs\utils\apache-maven-3.0.4\bin;D:\Volante_Installs\utils\apache-ant-1.9.0\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files (x86)\UltraEdit-32;.
+Jul 02, 2013 4:25:28 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8090
+Jul 02, 2013 4:25:28 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1885 ms
+Jul 02, 2013 4:25:28 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 02, 2013 4:25:28 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.35
+Jul 02, 2013 4:25:28 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 02, 2013 4:25:28 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 02, 2013 4:25:28 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor messageprocessor.xml
+Jul 02, 2013 4:25:29 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor webformrepair.xml
+Jul 02, 2013 4:25:29 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive OTCReporting.war
+Jul 02, 2013 4:25:30 PM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(D:\Volante_Installs\Volante_R500B1400\runtime\apache-tomcat\webapps\OTCReporting\WEB-INF\lib\servlet-api-2.5-20081211.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Jul 02, 2013 4:25:30 PM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(D:\Volante_Installs\Volante_R500B1400\runtime\apache-tomcat\webapps\OTCReporting\WEB-INF\lib\servlet-api-2.5-6.1.14.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Jul 02, 2013 4:25:36 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive vte.war
+Jul 02, 2013 4:25:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Jul 02, 2013 4:25:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Jul 02, 2013 4:25:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Jul 02, 2013 4:25:37 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8090
+Jul 02, 2013 4:25:37 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Jul 02, 2013 4:25:37 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/108  config=null
+Jul 02, 2013 4:25:37 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 9613 ms

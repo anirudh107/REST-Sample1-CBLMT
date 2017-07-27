@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Exceptions (Exception*)>
+<!ELEMENT Exception (Type, Message, ErrorCode?, Severity, Cascadable, FieldName?, FieldID?, Internal_Code?, line, column, Error_Type, Trace)>
+<!ELEMENT Type (#PCDATA)>
+<!ELEMENT Message (#PCDATA)>
+<!ELEMENT ErrorCode (#PCDATA)>
+<!ELEMENT Severity (#PCDATA)>
+<!ELEMENT Cascadable (#PCDATA)>
+<!ELEMENT FieldName (#PCDATA)>
+<!ELEMENT FieldID (#PCDATA)>
+<!ELEMENT Internal_Code (#PCDATA)>
+<!ELEMENT line (#PCDATA)>
+<!ELEMENT column (#PCDATA)>
+<!ELEMENT Error_Type (#PCDATA)>
+<!ELEMENT Trace (#PCDATA)>
+

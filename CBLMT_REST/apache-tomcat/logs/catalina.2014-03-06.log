@@ -1,0 +1,16 @@
+Mar 06, 2014 3:52:26 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Mar 06, 2014 3:52:27 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 06, 2014 3:52:28 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/messageprocessor] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Mar 06, 2014 3:52:28 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@80cbba]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@1bf3208]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 06, 2014 3:52:28 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@16dc6c9]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@15c430]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 06, 2014 3:52:28 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@80cbba]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@1034e3b]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 06, 2014 3:52:28 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@16dc6c9]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@53d74]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Mar 06, 2014 3:52:31 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090

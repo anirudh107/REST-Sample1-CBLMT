@@ -1,0 +1,1125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cartridge xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="5.2.1" name="MsgProcessing" type="Cartridge">
+	<description><![CDATA[i) Read SWIFT message, validate and translate to other Non-SWIFT format (example: CBL)
+ii) Read Non-SWIFT data (CBL) and populate into a Volante Cartridge to get SWIFT out]]></description>
+	<version>1.0</version>
+	<private>
+		<summary>
+			<service name="Input" version="1.0" type="Internal Message">
+			</service>
+			<service name="MT103ToCobCb" version="1.0" type="Mapping">
+			</service>
+			<service name="CobCbToMT103" version="1.0" type="Mapping">
+			</service>
+			<service name="CobCbToMTFlow" version="1.0" type="Message Flow">
+			</service>
+			<service name="MTToCobCbFlow" version="1.0" type="Message Flow">
+			</service>
+			<service name="RESTConverterService" version="1.0" type="RESTServer">
+			</service>
+			<function name="createAddressLines"/>
+		</summary>
+	</private>
+	<references type="References">
+		<reference>
+			<type>Cartridge</type>
+			<relative-path>Msgs\Msgs.car</relative-path>
+			<absolute-path>D:\Volante_Installs\Demos\REST\CBLMT_REST\CBLMT\Msgs\Msgs.car</absolute-path>
+		</reference>
+		<reference>
+			<type>Cartridge</type>
+			<relative-path>TransformExceptionMapping\TransformExceptionMapping.car</relative-path>
+			<absolute-path>D:\Volante_Installs\Demos\REST\CBLMT_REST\CBLMT\TransformExceptionMapping\TransformExceptionMapping.car</absolute-path>
+		</reference>
+	</references>
+	<folder name="CB To MT" type="FolderElement">
+		<internalmessage name="Input" type="InternalMessage">
+			<version>1.0</version>
+			<normalizedformat>
+				<xpath-namespaces>
+					<namespace value="http://www.w3.org/2005/xpath-functions" prefix="fn"/>
+					<namespace value="http://www.w3.org/2001/XMLSchema" prefix="xs"/>
+					<namespace value="java:com.tplus.transform.runtime.swift.SwiftXPathFunctions" prefix="swift"/>
+				</xpath-namespaces>
+				<fields>
+					<field xsi:type="InternalMessageFieldType">
+						<name>Payload</name>
+						<type>String</type>
+						<notnull>true</notnull>
+						<length>-1</length>
+					</field>
+				</fields>
+			</normalizedformat>
+			<validationrules name="Default" type="ValidationRules">
+			</validationrules>
+			<elementproperties>
+				<propertymap>
+					<property name="codegen.java.properties">
+						<value>
+							<propertymap type="com.tplus.transform.design.PropertiesDef">
+								<property name="Java Package Name" value="com.transform.internal.%e"/>
+								<property name="Jar Name" value="%c.jar"/>
+								<property name="Manifest Entries" value="transformrt.jar"/>
+								<property name="Data Source" value=""/>
+							</propertymap>
+						</value>
+					</property>
+				</propertymap>
+			</elementproperties>
+		</internalmessage>
+		<messagemapping rulename="MT103ToCobCb" type="MessageMapping">
+			<source>MT103</source>
+			<destination>CobCb</destination>
+			<mappingrules>
+				<mappings>
+					<mapping type="formula">
+						<source-field><![CDATA[Left(Basic_Header.LT_Identifier, 6)]]></source-field>
+						<destination-field>ORDERING INST</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>20.Sender's_Reference</source-field>
+						<destination-field>TRANSACTION-REFERENCE-NUMBER</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>Basic Header.Session Number</source-field>
+						<destination-field>BATCH-IDENTIFICATION</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>Basic Header.Sequence Number</source-field>
+						<destination-field>BATCH-SEQUENCE-NUMBER</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>32A.Currency</source-field>
+						<destination-field>CURRENCY-CODE</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>32A.Date</source-field>
+						<destination-field>VALUE-DATE-DEBIT</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>32A.Amount</source-field>
+						<destination-field>CREDIT-AMOUNT</destination-field>
+					</mapping>
+					<mapping type="formula">
+						<source-field><![CDATA[Left(Application_Header_Input.Receiver_s_Address, 6)]]></source-field>
+						<destination-field>BC-NUMBER-BENEFICIARY-BANK</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>Application Header Input.Message Priority</source-field>
+						<destination-field>PRIORITY-CODE</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>50a.Party_Identifier</source-field>
+						<destination-field>ORDERING-CUSTOMER-ACCOUNT-NUMBER.CODE-IDENTIFICATION</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>50a.Identifier_Code</source-field>
+						<destination-field>ORDERING-CUSTOMER-ACCOUNT-NUMBER.IBAN</destination-field>
+					</mapping>
+					<mapping type="formula">
+						<source-field><![CDATA[if(length(val(F50a[0].Name___Address)) > 0){
+	def lineList = Split("\r\n", F50a[0].Name___Address);
+	def index = 0;
+	foreach($elm in lineList){
+		index += 1;
+		//Name of the field to be set is FULL-ADDRESS-1, -2 etc.
+		SetString(self.ORDERING_CUSTOMER_ACCOUNT_NUMBER.ORDERING_PARTY_ADDRESS[0], ("FULL-ADDRESS-" + index), $elm);
+	}
+}]]></source-field>
+						<destination-field>ORDERING-CUSTOMER-ACCOUNT-NUMBER.ORDERING-PARTY-ADDRESS.FULL-ADDRESS-1</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>50a.Identifier_Code</source-field>
+						<destination-field>ORDERING-CUSTOMER-ACCOUNT-NUMBER.SWIFT-BIC</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>50a.Account</source-field>
+						<destination-field>ORDERING-CUSTOMER-ACCOUNT-NUMBER.ACCOUNT-NUMBER</destination-field>
+					</mapping>
+					<mapping type="formula">
+						<source-field><![CDATA[//we have to create 4 instances..
+/*
+def add = SecAddElement(self.ORDERING_CUSTOMER_ACCOUNT_NUMBER.FULL_ADDRESS);
+add.value = left(F50a.Name___Address, 35);
+add = SecAddElement(self.ORDERING_CUSTOMER_ACCOUNT_NUMBER.FULL_ADDRESS);
+add = SecAddElement(self.ORDERING_CUSTOMER_ACCOUNT_NUMBER.FULL_ADDRESS);
+add = SecAddElement(self.ORDERING_CUSTOMER_ACCOUNT_NUMBER.FULL_ADDRESS);
+*/
+createAddressLines(self.ORDERING_CUSTOMER_ACCOUNT_NUMBER.FULL_ADDRESS, F50a.Name___Address);]]></source-field>
+						<destination-field>ORDERING-CUSTOMER-ACCOUNT-NUMBER.FULL-ADDRESS</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>59a.Account</source-field>
+						<destination-field>BENEFICIARY.ACCOUNT-NUMBER</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>59a.Identifier_Code</source-field>
+						<destination-field>BENEFICIARY.IBAN</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>59a.Name_&amp;_Address</source-field>
+						<destination-field>BENEFICIARY.BENEFICIARY-ADDRESS.FULL-ADDRESS-1</destination-field>
+					</mapping>
+					<mapping type="formula">
+						<source-field><![CDATA[createAddressLines(self.BENEFICIARY.BENEFICIARY_ADDRESS.ADDRESS_FOR_PAYMENT_INSTRUCTIONS, val(F59a.Name___Address))]]></source-field>
+						<destination-field>BENEFICIARY.BENEFICIARY-ADDRESS.ADDRESS-FOR-PAYMENT-INSTRUCTIONS</destination-field>
+					</mapping>
+					<mapping type="formula">
+						<source-field><![CDATA[createAddressLines(self.BENEFICIARY.BENEFICIARY_ADDRESS.MESSAGES_TO_THE_BENEFICIARY, val( F72.Narrative___Structured_Format))]]></source-field>
+						<destination-field>BENEFICIARY.BENEFICIARY-ADDRESS.MESSAGES-TO-THE-BENEFICIARY</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>33B.Amount</source-field>
+						<destination-field>BENEFICIARY.BENEFICIARY-ADDRESS.ORDERING-PARTY-PAYMEN-AMOUNT.AMMOUNT</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>33B.Currency</source-field>
+						<destination-field>BENEFICIARY.BENEFICIARY-ADDRESS.ORDERING-PARTY-PAYMEN-AMOUNT.CURRENCY</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>36.Rate</source-field>
+						<destination-field>BENEFICIARY.BENEFICIARY-ADDRESS.ORDERING-PARTY-PAYMEN-AMOUNT.CURRENCY-CONVERSION-RATE</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>71A.Code</source-field>
+						<destination-field>BENEFICIARY.BENEFICIARY-ADDRESS.FEE-OPTIONS-AND-AMOUNTS.OPTION-SHA-OUR</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>71F.Currency</source-field>
+						<destination-field>BENEFICIARY.BENEFICIARY-ADDRESS.FEE-OPTIONS-AND-AMOUNTS.OPTION-OUR-AND-CURRENCY-</destination-field>
+					</mapping>
+				</mappings>
+			</mappingrules>
+			<elementproperties>
+				<propertymap>
+					<property name="codegen.java.properties">
+						<value>
+							<propertymap type="com.tplus.transform.design.PropertiesDef">
+								<property name="Java Package Name" value="com.transform.mapping"/>
+								<property name="Jar Name" value="%c.jar"/>
+								<property name="Manifest Entries" value="transformrt.jar"/>
+								<property name="Data Source" value=""/>
+							</propertymap>
+						</value>
+					</property>
+				</propertymap>
+			</elementproperties>
+		</messagemapping>
+		<messagemapping rulename="CobCbToMT103" type="MessageMapping">
+			<source>CobCb</source>
+			<destination>MT103</destination>
+			<mappingrules>
+				<mappings>
+					<mapping type="formula">
+						<source-field><![CDATA["F"]]></source-field>
+						<destination-field>Basic Header.Application Identifier</destination-field>
+					</mapping>
+					<mapping type="formula">
+						<source-field><![CDATA["01"]]></source-field>
+						<destination-field>Basic Header.Service Identifier</destination-field>
+					</mapping>
+					<mapping type="formula">
+						<source-field><![CDATA[ORDERING_INST + "B0AXXX"]]></source-field>
+						<destination-field>Basic Header.LT Identifier</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>BATCH-IDENTIFICATION</source-field>
+						<destination-field>Basic Header.Session Number</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>BATCH-SEQUENCE-NUMBER</source-field>
+						<destination-field>Basic Header.Sequence Number</destination-field>
+					</mapping>
+					<mapping type="formula">
+						<source-field><![CDATA["I"]]></source-field>
+						<destination-field>Application Header Input.Input/Output Identifier</destination-field>
+					</mapping>
+					<mapping type="formula">
+						<source-field><![CDATA["103"]]></source-field>
+						<destination-field>Application Header Input.Message Type</destination-field>
+					</mapping>
+					<mapping type="formula">
+						<source-field><![CDATA[if(IsNull(BC_NUMBER_BENEFICIARY_BANK)){
+	Set("ABCDEFGHXXXX");
+}else{
+	Set(BC_NUMBER_BENEFICIARY_BANK + "B0AXXX");
+}]]></source-field>
+						<destination-field>Application Header Input.Receiver's Address</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>PRIORITY-CODE</source-field>
+						<destination-field>Application Header Input.Message Priority</destination-field>
+					</mapping>
+					<mapping type="formula">
+						<source-field><![CDATA[Upper(Left(TRANSACTION_REFERENCE_NUMBER, 4))]]></source-field>
+						<destination-field>20.Sender's_Reference</destination-field>
+					</mapping>
+					<mapping type="formula">
+						<source-field><![CDATA["CRED"]]></source-field>
+						<destination-field>23B.Type</destination-field>
+					</mapping>
+					<mapping type="formula">
+						<source-field><![CDATA["CHQB"]]></source-field>
+						<destination-field>23E.Instruction</destination-field>
+					</mapping>
+					<mapping type="formula">
+						<source-field><![CDATA[//Comment
+FormatDate(Today(), "yyMMdd")]]></source-field>
+						<destination-field>32A.Date</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>CURRENCY-CODE</source-field>
+						<destination-field>32A.Currency</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>CREDIT-AMOUNT</source-field>
+						<destination-field>32A.Amount</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>BENEFICIARY.BENEFICIARY-ADDRESS.ORDERING-PARTY-PAYMEN-AMOUNT.CURRENCY</source-field>
+						<destination-field>33B.Currency</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>BENEFICIARY.BENEFICIARY-ADDRESS.ORDERING-PARTY-PAYMEN-AMOUNT.AMMOUNT</source-field>
+						<destination-field>33B.Amount</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>ORDERING-CUSTOMER-ACCOUNT-NUMBER.IBAN</source-field>
+						<destination-field>50a.Account</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>ORDERING-CUSTOMER-ACCOUNT-NUMBER.IBAN</source-field>
+						<destination-field>50a.Identifier_Code</destination-field>
+					</mapping>
+					<mapping type="formula">
+						<source-field><![CDATA[replace(ORDERING_CUSTOMER_ACCOUNT_NUMBER.ORDERING_PARTY_ADDRESS.FULL_ADDRESS_1, "\r\n", "")]]></source-field>
+						<destination-field>50a.Name_&amp;_Address</destination-field>
+					</mapping>
+					<mapping type="formula">
+						<source-field><![CDATA['K']]></source-field>
+						<destination-field>50a.FormatOption</destination-field>
+					</mapping>
+					<mapping type="one2one">
+						<source-field>BENEFICIARY.BENEFICIARY-ADDRESS.FULL-ADDRESS-1</source-field>
+						<destination-field>59a.Name_&amp;_Address</destination-field>
+					</mapping>
+					<mapping type="formula">
+						<source-field><![CDATA[' ']]></source-field>
+						<destination-field>59a.FormatOption</destination-field>
+					</mapping>
+					<mapping type="formula">
+						<source-field><![CDATA[//BENEFICIARY.BENEFICIARY-ADDRESS.FEE-OPTIONS-AND-AMOUNTS.OPTION-SHA-OUR
+BENEFICIARY.BENEFICIARY_ADDRESS.FEE_OPTIONS_AND_AMOUNTS.OPTION_SHA_OUR]]></source-field>
+						<destination-field>71A.Code</destination-field>
+					</mapping>
+				</mappings>
+				<field-infos>
+					<field-info name="32A">
+						<comment><![CDATA[ChrisStares:
+This is my comment]]></comment>
+					</field-info>
+				</field-infos>
+			</mappingrules>
+			<elementproperties>
+				<propertymap>
+					<property name="codegen.java.properties">
+						<value>
+							<propertymap type="com.tplus.transform.design.PropertiesDef">
+								<property name="Java Package Name" value="com.transform.mapping"/>
+								<property name="Jar Name" value="%c.jar"/>
+								<property name="Manifest Entries" value="transformrt.jar"/>
+								<property name="Data Source" value=""/>
+							</propertymap>
+						</value>
+					</property>
+				</propertymap>
+			</elementproperties>
+		</messagemapping>
+		<messageflow name="CobCbToMTFlow" type="MessageFlow">
+			<version>1.0</version>
+			<transaction>NotRequired</transaction>
+			<variables>
+				<xpath-namespaces>
+					<namespace value="http://www.w3.org/2005/xpath-functions" prefix="fn"/>
+					<namespace value="http://www.w3.org/2001/XMLSchema" prefix="xs"/>
+					<namespace value="java:com.tplus.transform.runtime.swift.SwiftXPathFunctions" prefix="swift"/>
+				</xpath-namespaces>
+				<fields>
+					<field>
+						<name>Input</name>
+						<type>DataObject</type>
+						<minoccurs>1</minoccurs>
+						<maxoccurs>1</maxoccurs>
+						<variabletype>INPUT</variabletype>
+						<message>Input</message>
+						<fields>
+						</fields>
+					</field>
+					<field>
+						<name>rawCB</name>
+						<type>String</type>
+						<notnull>false</notnull>
+						<length>0</length>
+						<variabletype>LOCAL</variabletype>
+					</field>
+					<field>
+						<name>objCB</name>
+						<type>DataObject</type>
+						<minoccurs>0</minoccurs>
+						<maxoccurs>1</maxoccurs>
+						<variabletype>LOCAL</variabletype>
+						<message>CobCb</message>
+						<fields>
+						</fields>
+					</field>
+					<field>
+						<name>objMT</name>
+						<type>DataObject</type>
+						<minoccurs>0</minoccurs>
+						<maxoccurs>1</maxoccurs>
+						<variabletype>LOCAL</variabletype>
+						<message>MT103</message>
+						<fields>
+						</fields>
+					</field>
+					<field>
+						<name>exceptionObj</name>
+						<type>DataObject</type>
+						<minoccurs>0</minoccurs>
+						<maxoccurs>1</maxoccurs>
+						<variabletype>LOCAL</variabletype>
+						<message>TransformException</message>
+						<fields>
+						</fields>
+					</field>
+					<field>
+						<name>rawMTOut</name>
+						<type>RawMessage</type>
+						<notnull>true</notnull>
+						<variabletype>OUTPUT</variabletype>
+					</field>
+				</fields>
+			</variables>
+			<additional-properties>
+				<property name="main-flow" value="false"/>
+			</additional-properties>
+			<flowelement name="Start1" uid="fae40d07-bed8-443a-abf8-9b34a31da6c6" type="Start" xsi:type="Start" >
+				<label>Start</label>
+				<description><![CDATA[]]></description>
+				<visual>
+					<position x="220" y="40"/>
+				</visual>
+			</flowelement>
+			<flowelement name="Stop1" uid="755a4b63-5849-4473-a045-6761455ab80b" type="Stop" xsi:type="Stop" >
+				<label>Stop</label>
+				<visual>
+					<position x="131" y="515"/>
+				</visual>
+			</flowelement>
+			<flowelement name="Parse1" uid="f7d9264d-ea28-4dcf-ac26-166b34bb7f37" type="Parse" xsi:type="Parse" >
+				<label>Parse CobCb</label>
+				<description><![CDATA[]]></description>
+				<in>rawCB</in>
+				<out>objCB</out>
+				<message>CobCb</message>
+				<cascade-exceptions>false</cascade-exceptions>
+				<visual>
+					<position x="220" y="180"/>
+				</visual>
+			</flowelement>
+			<flowelement name="Validate1" uid="1d50466b-79ab-486e-b590-7b51eedb2b9f" type="Validate" xsi:type="Validate" >
+				<label>Validate MT103</label>
+				<description><![CDATA[]]></description>
+				<in>objMT</in>
+				<message>MT103</message>
+				<cascade-exceptions>true</cascade-exceptions>
+				<visual>
+					<position x="131" y="353"/>
+				</visual>
+			</flowelement>
+			<flowelement name="Mapping1" uid="d79d4611-46c2-419c-bf75-bb89dec8c112" type="Mapping" xsi:type="Mapping" >
+				<label>Mapping CobCbToMT103</label>
+				<description><![CDATA[]]></description>
+				<in>objCB</in>
+				<out>objMT</out>
+				<messagemapping>CobCbToMT103</messagemapping>
+				<create-destination>true</create-destination>
+				<visual>
+					<position x="219" y="263"/>
+				</visual>
+			</flowelement>
+			<flowelement name="Serialize1" uid="a94c4ece-9942-4779-bf87-bc0eb71a3c3b" type="Serialize" xsi:type="Serialize" >
+				<label>Serialize MT103</label>
+				<description><![CDATA[]]></description>
+				<in>objMT</in>
+				<out>rawMTOut</out>
+				<message>MT103</message>
+				<cascade-exceptions>false</cascade-exceptions>
+				<visual>
+					<position x="131" y="443"/>
+				</visual>
+			</flowelement>
+			<flowelement name="Resume1" uid="5ff224a5-8143-4e44-a03b-6195a4626c53" type="Resume" xsi:type="Resume" >
+				<label>Resume</label>
+				<visual>
+					<position x="324" y="353"/>
+				</visual>
+			</flowelement>
+			<flowelement name="Custom1" uid="79cb1d52-2214-48bd-9a8c-00493cfc9c42" type="Custom" xsi:type="Custom" >
+				<label>Custom</label>
+				<description><![CDATA[]]></description>
+				<code><![CDATA[/*$dump = NewFileMessage("C:\\Temp\\dump.dat", "rw");
+$dump.Append(Input.Payload);
+$dump.Close();*/
+rawCB = Input.Payload.Replace("\n", "\r\n");
+]]></code>
+				<visual>
+					<position x="220" y="104"/>
+				</visual>
+			</flowelement>
+			<link type="Default" xsi:type="Default">
+				<outputport uid="d79d4611-46c2-419c-bf75-bb89dec8c112" portindex="1"/>
+				<inputport uid="1d50466b-79ab-486e-b590-7b51eedb2b9f" portindex="0"/>
+				<edge-type>DIRECT</edge-type>
+			</link>
+			<link type="Default" xsi:type="Default">
+				<outputport uid="a94c4ece-9942-4779-bf87-bc0eb71a3c3b" portindex="1"/>
+				<inputport uid="755a4b63-5849-4473-a045-6761455ab80b" portindex="0"/>
+				<edge-type>DIRECT</edge-type>
+			</link>
+			<link type="Default" xsi:type="Default">
+				<outputport uid="f7d9264d-ea28-4dcf-ac26-166b34bb7f37" portindex="1"/>
+				<inputport uid="d79d4611-46c2-419c-bf75-bb89dec8c112" portindex="0"/>
+				<edge-type>DIRECT</edge-type>
+			</link>
+			<link type="Exception" xsi:type="Exception">
+				<message>TransformException</message>
+				<out>exceptionObj</out>
+				<cascade-exceptions>true</cascade-exceptions>
+				<outputport uid="1d50466b-79ab-486e-b590-7b51eedb2b9f" portindex="2"/>
+				<inputport uid="5ff224a5-8143-4e44-a03b-6195a4626c53" portindex="0"/>
+				<edge-type>ELBOW</edge-type>
+			</link>
+			<link type="Default" xsi:type="Default">
+				<outputport uid="1d50466b-79ab-486e-b590-7b51eedb2b9f" portindex="1"/>
+				<inputport uid="a94c4ece-9942-4779-bf87-bc0eb71a3c3b" portindex="0"/>
+				<edge-type>DIRECT</edge-type>
+			</link>
+			<link type="Default" xsi:type="Default">
+				<outputport uid="fae40d07-bed8-443a-abf8-9b34a31da6c6" portindex="0"/>
+				<inputport uid="79cb1d52-2214-48bd-9a8c-00493cfc9c42" portindex="0"/>
+				<edge-type>DIRECT</edge-type>
+			</link>
+			<link type="Default" xsi:type="Default">
+				<outputport uid="79cb1d52-2214-48bd-9a8c-00493cfc9c42" portindex="1"/>
+				<inputport uid="f7d9264d-ea28-4dcf-ac26-166b34bb7f37" portindex="0"/>
+				<edge-type>DIRECT</edge-type>
+			</link>
+			<visual>
+				<bounds x="100" y="26" width="266" height="503"/>
+			</visual>
+			<elementproperties>
+				<propertymap>
+					<property name="codegen.java.properties">
+						<value>
+							<propertymap type="com.tplus.transform.design.PropertiesDef">
+								<property name="Java Package Name" value="com.transform.flow"/>
+								<property name="Jar Name" value="%c.jar"/>
+								<property name="Manifest Entries" value="transformrt.jar"/>
+								<property name="Data Source" value=""/>
+								<property name="Generate MDB" value="false"/>
+							</propertymap>
+						</value>
+					</property>
+				</propertymap>
+			</elementproperties>
+		</messageflow>
+		<messageflow name="MTToCobCbFlow" type="MessageFlow">
+			<version>1.0</version>
+			<transaction>NotRequired</transaction>
+			<variables>
+				<xpath-namespaces>
+					<namespace value="http://www.w3.org/2005/xpath-functions" prefix="fn"/>
+					<namespace value="http://www.w3.org/2001/XMLSchema" prefix="xs"/>
+					<namespace value="java:com.tplus.transform.runtime.swift.SwiftXPathFunctions" prefix="swift"/>
+				</xpath-namespaces>
+				<fields>
+					<field>
+						<name>Input</name>
+						<type>DataObject</type>
+						<minoccurs>1</minoccurs>
+						<maxoccurs>1</maxoccurs>
+						<variabletype>INPUT</variabletype>
+						<message>Input</message>
+						<fields>
+						</fields>
+					</field>
+					<field>
+						<name>rawMT</name>
+						<type>String</type>
+						<notnull>false</notnull>
+						<length>0</length>
+						<variabletype>LOCAL</variabletype>
+					</field>
+					<field>
+						<name>objMT</name>
+						<type>DataObject</type>
+						<minoccurs>0</minoccurs>
+						<maxoccurs>1</maxoccurs>
+						<variabletype>LOCAL</variabletype>
+						<message>MT103</message>
+						<fields>
+						</fields>
+					</field>
+					<field>
+						<name>objCB</name>
+						<type>DataObject</type>
+						<minoccurs>0</minoccurs>
+						<maxoccurs>1</maxoccurs>
+						<variabletype>LOCAL</variabletype>
+						<message>CobCb</message>
+						<fields>
+						</fields>
+					</field>
+					<field>
+						<name>rawCB</name>
+						<type>String</type>
+						<notnull>false</notnull>
+						<length>0</length>
+						<variabletype>LOCAL</variabletype>
+					</field>
+					<field>
+						<name>exceptionObj</name>
+						<type>DataObject</type>
+						<minoccurs>0</minoccurs>
+						<maxoccurs>1</maxoccurs>
+						<variabletype>LOCAL</variabletype>
+						<message>TransformException</message>
+						<fields>
+						</fields>
+					</field>
+					<field>
+						<name>rawException</name>
+						<type>String</type>
+						<notnull>false</notnull>
+						<length>-1</length>
+						<variabletype>LOCAL</variabletype>
+					</field>
+					<field>
+						<name>convertedException</name>
+						<type>String</type>
+						<notnull>false</notnull>
+						<length>-1</length>
+						<variabletype>LOCAL</variabletype>
+					</field>
+					<field>
+						<name>finalOutput</name>
+						<type>RawMessage</type>
+						<notnull>true</notnull>
+						<variabletype>OUTPUT</variabletype>
+					</field>
+				</fields>
+			</variables>
+			<additional-properties>
+				<property name="main-flow" value="false"/>
+			</additional-properties>
+			<flowelement name="Start1" uid="13f68634-65af-4ea0-b851-49a2549dd742" type="Start" xsi:type="Start" >
+				<label>Start</label>
+				<description><![CDATA[]]></description>
+				<visual>
+					<position x="671" y="39"/>
+				</visual>
+			</flowelement>
+			<flowelement name="Parse1" uid="b676b7ee-9b56-421d-bb25-88bd6bb0f388" type="Parse" xsi:type="Parse" >
+				<label>Parse MT103</label>
+				<description><![CDATA[]]></description>
+				<in>rawMT</in>
+				<out>objMT</out>
+				<options>
+					<option name="locationInfo">true</option>
+				</options>
+				<message>MT103</message>
+				<cascade-exceptions>true</cascade-exceptions>
+				<visual>
+					<position x="671" y="179"/>
+				</visual>
+			</flowelement>
+			<flowelement name="Mapping1" uid="bb038bc4-4938-4d59-96ab-9dd3ca9b0e00" type="Mapping" xsi:type="Mapping" >
+				<label>Mapping to COBOL Copybook</label>
+				<description><![CDATA[]]></description>
+				<in>objMT</in>
+				<out>objCB</out>
+				<messagemapping>MT103ToCobCb</messagemapping>
+				<create-destination>true</create-destination>
+				<visual>
+					<position x="680" y="472"/>
+				</visual>
+			</flowelement>
+			<flowelement name="Serialize1" uid="cd0ea177-5cc0-4a1a-bc0a-7acdc4547a3d" type="Serialize" xsi:type="Serialize" >
+				<label>Serialize COBOL Copybook output</label>
+				<description><![CDATA[]]></description>
+				<in>objCB</in>
+				<out>rawCB</out>
+				<message>CobCb</message>
+				<cascade-exceptions>false</cascade-exceptions>
+				<visual>
+					<position x="686" y="583"/>
+				</visual>
+			</flowelement>
+			<flowelement name="Validate1" uid="37eb6abc-310a-418e-9e27-726db0861f9b" type="Validate" xsi:type="Validate" >
+				<label>Validate MT103</label>
+				<description><![CDATA[]]></description>
+				<in>objMT</in>
+				<message>MT103</message>
+				<cascade-exceptions>true</cascade-exceptions>
+				<visual>
+					<position x="582" y="262"/>
+				</visual>
+			</flowelement>
+			<flowelement name="Resume1" uid="034bb5c0-5d7f-4625-b975-3a9538be20f4" type="Resume" xsi:type="Resume" >
+				<label>Resume</label>
+				<visual>
+					<position x="775" y="262"/>
+				</visual>
+			</flowelement>
+			<flowelement name="If1" uid="9a38292d-6346-4148-8857-6bd2ca404be7" type="If" xsi:type="If" >
+				<label>Any Exceptions?</label>
+				<description><![CDATA[]]></description>
+				<condition><![CDATA[IsNotNull(exceptionObj)]]></condition>
+				<visual>
+					<position x="582" y="364"/>
+				</visual>
+			</flowelement>
+			<flowelement name="Invoke1" uid="f498dbd7-fb8c-44bd-a622-45c8c4f0cb66" type="Invoke" xsi:type="Invoke" >
+				<label>%a %n</label>
+				<description><![CDATA[]]></description>
+				<name>TransformExceptionMappingFlow</name>
+				<cascade-exceptions>false</cascade-exceptions>
+				<input>
+					<field>
+						<name>exceptionsDataXML</name>
+						<type>String</type>
+						<value><![CDATA[rawException]]></value>
+						<notnull>false</notnull>
+					</field>
+				</input>
+				<output>
+					<field>
+						<name>exceptionsDataDelimited</name>
+						<type>String</type>
+						<value><![CDATA[convertedException]]></value>
+						<notnull>false</notnull>
+					</field>
+				</output>
+				<visual>
+					<position x="485" y="583"/>
+				</visual>
+			</flowelement>
+			<flowelement name="Custom1" uid="24e64ac8-52ef-499c-ae6d-38a7d0a32975" type="Custom" xsi:type="Custom" >
+				<label>Prepare Exceptions</label>
+				<description><![CDATA[]]></description>
+				<code><![CDATA[def originalRawException = ToText(exceptionObj);
+originalRawException = Replace(originalRawException, "TransformException", "Exception");
+originalRawException = Replace(originalRawException, "Internal-Code", "Internal_Code");
+originalRawException = Replace(originalRawException, "Error-Type", "Error_Type");
+
+rawException = "<Exceptions>\r\n" + originalRawException + "</Exceptions>";
+
+Info("*** TransformException = " + rawException)]]></code>
+				<visual>
+					<position x="483" y="472"/>
+				</visual>
+			</flowelement>
+			<flowelement name="Custom2" uid="18d8784b-826b-4493-a172-d66623948199" type="Custom" xsi:type="Custom" >
+				<label>Produce Final Output</label>
+				<description><![CDATA[]]></description>
+				<code><![CDATA[if(IsNotNull(rawCB)) {
+		finalOutput = rawCB.toRawMessage();
+	}
+else
+if(IsNotNull(rawException)) {
+		finalOutput = toRawMessage(rawException + "\r\n\r\n" + convertedException);
+	}]]></code>
+				<visual>
+					<position x="585" y="687"/>
+				</visual>
+			</flowelement>
+			<flowelement name="Stop1" uid="2e9551dc-cb2f-4814-9221-05c3d24170ab" type="Stop" xsi:type="Stop" >
+				<label>Stop</label>
+				<description><![CDATA[]]></description>
+				<visual>
+					<position x="584" y="759"/>
+				</visual>
+			</flowelement>
+			<flowelement name="Custom3" uid="aa324e29-f50b-4b04-8354-a61b7176c45d" type="Custom" xsi:type="Custom" >
+				<label>Custom</label>
+				<description><![CDATA[]]></description>
+				<code><![CDATA[/*$dump = NewFileMessage("C:\\Temp\\dump.dat", "rw");
+$dump.Append(Input.Payload);
+$dump.Close();*/
+rawMT = Input.Payload.Replace("\n", "\r\n");
+]]></code>
+				<visual>
+					<position x="671" y="103"/>
+				</visual>
+			</flowelement>
+			<link type="Default" xsi:type="Default">
+				<outputport uid="bb038bc4-4938-4d59-96ab-9dd3ca9b0e00" portindex="1"/>
+				<inputport uid="cd0ea177-5cc0-4a1a-bc0a-7acdc4547a3d" portindex="0"/>
+				<edge-type>DIRECT</edge-type>
+			</link>
+			<link type="Default" xsi:type="Default">
+				<outputport uid="b676b7ee-9b56-421d-bb25-88bd6bb0f388" portindex="1"/>
+				<inputport uid="37eb6abc-310a-418e-9e27-726db0861f9b" portindex="0"/>
+				<edge-type>DIRECT</edge-type>
+			</link>
+			<link type="Exception" xsi:type="Exception">
+				<message>TransformException</message>
+				<out>exceptionObj</out>
+				<cascade-exceptions>true</cascade-exceptions>
+				<outputport uid="37eb6abc-310a-418e-9e27-726db0861f9b" portindex="2"/>
+				<inputport uid="034bb5c0-5d7f-4625-b975-3a9538be20f4" portindex="0"/>
+				<edge-type>ELBOW</edge-type>
+			</link>
+			<link type="Default" xsi:type="Default">
+				<outputport uid="37eb6abc-310a-418e-9e27-726db0861f9b" portindex="1"/>
+				<inputport uid="9a38292d-6346-4148-8857-6bd2ca404be7" portindex="0"/>
+				<edge-type>DIRECT</edge-type>
+			</link>
+			<link type="Default" xsi:type="Default">
+				<outputport uid="24e64ac8-52ef-499c-ae6d-38a7d0a32975" portindex="1"/>
+				<inputport uid="f498dbd7-fb8c-44bd-a622-45c8c4f0cb66" portindex="0"/>
+				<edge-type>DIRECT</edge-type>
+			</link>
+			<link type="Default" xsi:type="Default">
+				<outputport uid="9a38292d-6346-4148-8857-6bd2ca404be7" portindex="1"/>
+				<inputport uid="24e64ac8-52ef-499c-ae6d-38a7d0a32975" portindex="0"/>
+				<edge-type>DIRECT</edge-type>
+			</link>
+			<link type="Default" xsi:type="Default">
+				<outputport uid="9a38292d-6346-4148-8857-6bd2ca404be7" portindex="2"/>
+				<inputport uid="bb038bc4-4938-4d59-96ab-9dd3ca9b0e00" portindex="0"/>
+				<edge-type>DIRECT</edge-type>
+			</link>
+			<link type="Default" xsi:type="Default">
+				<outputport uid="f498dbd7-fb8c-44bd-a622-45c8c4f0cb66" portindex="1"/>
+				<inputport uid="18d8784b-826b-4493-a172-d66623948199" portindex="0"/>
+				<edge-type>DIRECT</edge-type>
+			</link>
+			<link type="Default" xsi:type="Default">
+				<outputport uid="cd0ea177-5cc0-4a1a-bc0a-7acdc4547a3d" portindex="1"/>
+				<inputport uid="18d8784b-826b-4493-a172-d66623948199" portindex="0"/>
+				<edge-type>DIRECT</edge-type>
+			</link>
+			<link type="Default" xsi:type="Default">
+				<outputport uid="18d8784b-826b-4493-a172-d66623948199" portindex="1"/>
+				<inputport uid="2e9551dc-cb2f-4814-9221-05c3d24170ab" portindex="0"/>
+				<edge-type>DIRECT</edge-type>
+			</link>
+			<link type="Default" xsi:type="Default">
+				<outputport uid="13f68634-65af-4ea0-b851-49a2549dd742" portindex="0"/>
+				<inputport uid="aa324e29-f50b-4b04-8354-a61b7176c45d" portindex="0"/>
+				<edge-type>DIRECT</edge-type>
+			</link>
+			<link type="Default" xsi:type="Default">
+				<outputport uid="aa324e29-f50b-4b04-8354-a61b7176c45d" portindex="1"/>
+				<inputport uid="b676b7ee-9b56-421d-bb25-88bd6bb0f388" portindex="0"/>
+				<edge-type>DIRECT</edge-type>
+			</link>
+			<visual>
+				<bounds x="442" y="25" width="375" height="748"/>
+			</visual>
+			<elementproperties>
+				<propertymap>
+					<property name="codegen.java.properties">
+						<value>
+							<propertymap type="com.tplus.transform.design.PropertiesDef">
+								<property name="Java Package Name" value="com.transform.flow"/>
+								<property name="Jar Name" value="%c.jar"/>
+								<property name="Manifest Entries" value="transformrt.jar"/>
+								<property name="Data Source" value=""/>
+								<property name="Generate MDB" value="false"/>
+							</propertymap>
+						</value>
+					</property>
+				</propertymap>
+			</elementproperties>
+		</messageflow>
+		<elementproperties>
+			<propertymap>
+			</propertymap>
+		</elementproperties>
+	</folder>
+	<folder name="Function Definitions" type="FunctionDefFolder">
+		<FormulaFunctionDef name="createAddressLines" type="FormulaFunctionDef">
+			<description></description>
+			<Category>User Defined</Category>
+			<parameterfields>
+				<parameterfield>
+					<name>targetSec</name>
+					<type>Section</type>
+				</parameterfield>
+				<parameterfield>
+					<name>fullAddress</name>
+					<type>String</type>
+				</parameterfield>
+			</parameterfields>
+			<ReturnType>Void</ReturnType>
+			<Code><![CDATA[//we have to create 4 instances..
+def add = SecAddElement(targetSec);
+if(length(val(fullAddress)) > 0){
+	SetString(add, "value", left(replace(fullAddress, "\r\n", ""), 35));
+}
+add = SecAddElement(targetSec);
+add = SecAddElement(targetSec);
+add = SecAddElement(targetSec);]]></Code>
+			<function-type>Formula</function-type>
+		</FormulaFunctionDef>
+		<elementproperties>
+			<propertymap>
+			</propertymap>
+		</elementproperties>
+	</folder>
+	<file type="DirectoryFileElement" name="src"/>
+	<folder name="REST" type="FolderElement">
+		<restserver name="RESTConverterService" type="RESTServer">
+			<version>1.0</version>
+			<application-info>
+				<version>1.0</version>
+				<host>https://</host>
+			</application-info>
+			<handler-info>
+			</handler-info>
+			<access-tags default="">
+				<access-tag>Private,Public</access-tag>
+			</access-tags>
+			<service name="convertCOBOLToSWIFTMT">
+				<deprecated>false</deprecated>
+				<excluded>false</excluded>
+				<operation name="CobCbToMTFlow">
+					<path>/convertcbtomt</path>
+					<deprecated>false</deprecated>
+					<excluded>false</excluded>
+					<method>POST</method>
+					<messageFlow>CobCbToMTFlow</messageFlow>
+					<parameter name="Input">
+						<binding-type>body</binding-type>
+						<message-name>Input</message-name>
+						<required>true</required>
+						<repeat>false</repeat>
+						<ignoreadditionalfields>true</ignoreadditionalfields>
+					</parameter>
+					<response-parameter name="Created">
+						<response-code>201</response-code>
+						<description>Created</description>
+						<repeat>false</repeat>
+						<required>true</required>
+						<ignoreadditionalfields>false</ignoreadditionalfields>
+					</response-parameter>
+				</operation>
+			</service>
+			<service name="convertSWIFTMTToCOBOL">
+				<deprecated>false</deprecated>
+				<excluded>false</excluded>
+				<operation name="MTToCobCbFlow">
+					<path>/convertmttocb</path>
+					<deprecated>false</deprecated>
+					<excluded>false</excluded>
+					<method>POST</method>
+					<messageFlow>MTToCobCbFlow</messageFlow>
+					<parameter name="Input">
+						<binding-type>body</binding-type>
+						<message-name>Input</message-name>
+						<required>true</required>
+						<repeat>false</repeat>
+						<ignoreadditionalfields>true</ignoreadditionalfields>
+					</parameter>
+					<response-parameter name="Created">
+						<response-code>201</response-code>
+						<description>Created</description>
+						<repeat>false</repeat>
+						<required>true</required>
+						<ignoreadditionalfields>false</ignoreadditionalfields>
+					</response-parameter>
+				</operation>
+			</service>
+		</restserver>
+		<elementproperties>
+			<propertymap>
+			</propertymap>
+		</elementproperties>
+	</folder>
+	<elementproperties>
+		<propertymap>
+			<property name="DOCUMENT_PROPERTIES">
+				<value>
+					<propertymap>
+						<property name="Creation Time" value="Tue Mar 15 14:41:06 IST 2011"/>
+						<property name="Author" value="girisha"/>
+						<property name="Title" value="MsgProcessing"/>
+						<property name="Client Id" value="chris.stares@volantetech.com"/>
+						<property name="Last Author" value="ChrisStares"/>
+						<property name="Last Save Time" value="Wed Mar 15 00:55:41 IST 2017"/>
+						<property name="Designer Build" value="1631"/>
+						<property name="Revision Number" value="181"/>
+					</propertymap>
+				</value>
+			</property>
+			<property name="CARTRIDGE_INFO">
+				<value>
+					<propertymap type="com.tplus.transform.design.CartridgeInfo">
+						<property name="GeneratedFiles">
+							<value>
+								<propertymap>
+									<property name="Java/EJB">
+										<value>
+											<propertymap>
+												<property name="assembly">
+													<value>
+														<propertylist>
+															<value>
+																<propertymap type="com.tplus.transform.design.AssemblyInfo">
+																	<property name="groupId" value="com.volantetech.volante.cartridge"/>
+																	<property name="name" value="D:\Volante_Installs\Demos\REST\CBLMT_REST\CBLMT\java\MsgProcessing.jar"/>
+																	<property name="artifactId" value="cartridge-MsgProcessing"/>
+																	<property name="type" value="assembly"/>
+																	<property name="version" value="1.0"/>
+																</propertymap>
+															</value>
+														</propertylist>
+													</value>
+												</property>
+												<property name="DEPENDENCY">
+													<value>
+														<propertylist>
+															<value>
+																<propertymap type="com.tplus.transform.design.ModuleInfo">
+																	<property name="groupId" value="com.volantetech.volante"/>
+																	<property name="name" value="D:\Volante_Installs\Volante_R521\lib\runtime\transformrt.jar"/>
+																	<property name="artifactId" value="volante-core"/>
+																	<property name="type" value="DEPENDENCY"/>
+																	<property name="version" value="5.2.1"/>
+																</propertymap>
+															</value>
+															<value>
+																<propertymap type="com.tplus.transform.design.ModuleInfo">
+																	<property name="groupId" value="jetty"/>
+																	<property name="name" value="D:\Volante_Installs\Volante_R521\lib\runtime\jetty\jetty.jar"/>
+																	<property name="artifactId" value="jetty"/>
+																	<property name="type" value="DEPENDENCY"/>
+																	<property name="version" value="1.0"/>
+																</propertymap>
+															</value>
+															<value>
+																<propertymap type="com.tplus.transform.design.ModuleInfo">
+																	<property name="groupId" value="com.volantetech.volante"/>
+																	<property name="name" value="D:\Volante_Installs\Volante_R521\lib\runtime\volante-restrt.jar"/>
+																	<property name="artifactId" value="volante-rest"/>
+																	<property name="type" value="DEPENDENCY"/>
+																	<property name="version" value="5.2.1"/>
+																</propertymap>
+															</value>
+															<value>
+																<propertymap type="com.tplus.transform.design.ModuleInfo">
+																	<property name="groupId" value="com.volantetech.volante"/>
+																	<property name="name" value="D:\Volante_Installs\Volante_R521\lib\runtime\generalutils.jar"/>
+																	<property name="artifactId" value="volante-utils"/>
+																	<property name="type" value="DEPENDENCY"/>
+																	<property name="version" value="5.2.1"/>
+																</propertymap>
+															</value>
+														</propertylist>
+													</value>
+												</property>
+											</propertymap>
+										</value>
+									</property>
+								</propertymap>
+							</value>
+						</property>
+						<property name="cartridgefilename" value="D:\Volante_Installs\Demos\REST\CBLMT_REST\CBLMT\MsgProcessing.car"/>
+					</propertymap>
+				</value>
+			</property>
+			<property name="codegen.java.options">
+				<value>
+					<propertymap type="com.tplus.transform.design.codegen.java.JavaCodeGeneratorOptions">
+						<property name="isJBoss" value="true"/>
+						<property name="resource-references">
+							<value>
+								<propertylist>
+								</propertylist>
+							</value>
+						</property>
+						<property name="isWAR" value="false"/>
+						<property name="isOSGI" value="true"/>
+						<property name="isGenerateALSB" value="false"/>
+						<property name="isEJB" value="true"/>
+						<property name="osgi-options">
+							<value>
+								<propertymap>
+									<property name="include-dependencies" value="false"/>
+								</propertymap>
+							</value>
+						</property>
+						<property name="isOrion" value="true"/>
+						<property name="isWebSphere" value="true"/>
+						<property name="isVolante" value="true"/>
+						<property name="isRemote" value="true"/>
+						<property name="isLocal" value="true"/>
+						<property name="isWebLogic" value="true"/>
+						<property name="isGeronimo" value="true"/>
+						<property name="isGenerateJNDILinks" value="true"/>
+						<property name="isWLEVS" value="false"/>
+						<property name="ejb-jndi-prefix" value=""/>
+						<property name="isGenerateEAR" value="false"/>
+					</propertymap>
+				</value>
+			</property>
+			<property name="codegen.java.properties">
+				<value>
+					<propertymap type="com.tplus.transform.design.PropertiesDef">
+						<property name="Java Package Name" value="com.transform.cartridge.%c"/>
+						<property name="Max Class Length" value="150"/>
+					</propertymap>
+				</value>
+			</property>
+			<property name="testsuites">
+				<value>
+					<propertylist>
+					</propertylist>
+				</value>
+			</property>
+			<property name="WebServiceDefs">
+				<value>
+					<propertymap>
+						<property name="webservices">
+							<value>
+								<propertylist>
+								</propertylist>
+							</value>
+						</property>
+					</propertymap>
+				</value>
+			</property>
+			<property name="codegen.java.bindings">
+				<value>
+					<propertymap type="com.tplus.transform.design.codegen.DefaultLanguageMapping">
+					</propertymap>
+				</value>
+			</property>
+			<property name="codegen.java.general">
+				<value>
+					<propertymap>
+						<property name="additionalClasspath" value=""/>
+						<property name="debugInfo" value="true"/>
+					</propertymap>
+				</value>
+			</property>
+		</propertymap>
+	</elementproperties>
+	<workspace>
+		<selected-element root="D:\Volante_Installs\Demos\REST\CBLMT_REST\CBLMT\MsgProcessing.car">MsgProcessing/CB To MT/MTToCobCbFlow</selected-element>
+	</workspace>
+</cartridge>
+

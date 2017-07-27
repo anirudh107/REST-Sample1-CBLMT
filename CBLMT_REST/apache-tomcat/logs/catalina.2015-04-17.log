@@ -1,0 +1,14 @@
+Apr 17, 2015 10:09:33 AM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8090
+Apr 17, 2015 10:09:34 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Apr 17, 2015 10:09:37 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/messageprocessor] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Apr 17, 2015 10:09:37 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.runtime.vm.WeakThreadLocal] (value [com.tplus.transform.runtime.vm.WeakThreadLocal@b1593d]) and a value of type [java.lang.ref.WeakReference] (value [java.lang.ref.WeakReference@159df3b]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Apr 17, 2015 10:09:37 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [com.tplus.transform.lang.FloatingDecimal$1] (value [com.tplus.transform.lang.FloatingDecimal$1@14ebf15]) and a value of type [char[]] (value [[C@e32b8e]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Apr 17, 2015 10:09:37 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/messageprocessor] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@40a746]) and a value of type [com.volante.component.server.transaction.TransactionManagerImpl.ThreadInfo] (value [com.volante.component.server.transaction.TransactionManagerImpl$ThreadInfo@a608b2]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Apr 17, 2015 10:09:41 AM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8090
